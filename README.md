@@ -70,7 +70,9 @@ I also examined lines that were not being picked up by my analysis:
 
 I implemented a regex search to get as much complete data as possible, focusing on the format that I deemed most likely to accurately catch all signatures. The results dissapointed a bit:
 
-|regex: `Southeast European Times .*-- \d\d/\d\d/\d\d`| counts|
+### regex: `Southeast European Times .*-- \d\d/\d\d/\d\d`
+
+|file| counts|
 |---|---|
 | setimes.bs-hr.bs.txt |  2940 |
 | setimes.bs-hr.hr.txt |  2596 |
@@ -79,8 +81,8 @@ I implemented a regex search to get as much complete data as possible, focusing 
 | setimes.hr-sr.hr.txt |  3179 |
 | setimes.hr-sr.sr.txt |  2566 |
 
-
-|regex: `([\w+]|[|Za|za|for|For]|^) Southeast European Times .*[-\-|–] \d\d/\d\d/\d\d`| counts|
+### regex: `([\w+]|[|Za|za|for|For]|^) Southeast European Times .*[-\-|–] \d\d/\d\d/\d\d`
+|file| counts|
 |---|---|
 | setimes.bs-hr.bs.txt |  3085 |
 | setimes.bs-hr.hr.txt |  3066 |
