@@ -7,7 +7,7 @@ Datasets used:
 * Denis' tweets
 * CLARIN webcrawls.
 
-# Data preparation
+# Data preparation - setimes dataset
 
 My plan was to extract the documents from the `setimes` files. This would be done by combing through and searching for the delimiter that separated the articles:
 
@@ -94,3 +94,5 @@ I implemented a regex search to get as much complete data as possible, focusing 
 The fluctuations between text pairs is gigantic, so I decided to go forward with the second implementation, where I used `parse` library to search for `{beginning} Southeast European Times {end}\n` and where the counts agree to 0.4% or better.
 
 When I joined the data into a dataset with proper `fasttext` formatting I also created a shuffled file which will be used to produce train-test data. I trained my first model with this batch which produced suspiciously good precisions and recalls of 99%. When visually inspecting the data I noticed there were a few repeated lines, possibly because the same short document appeared in many dataset pairs. I removed those. The training was repeated and again the results were evaluated with the built-in method, yielding precision and recall of 99%.
+
+# Data preparation - twitter
