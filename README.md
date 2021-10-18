@@ -101,7 +101,18 @@ As demonstrated in the notebook `3del.ipynb` we have 1000 twitter users crawled,
 
 Functions to remove mentions, URLs, and hashtags have been prepared. Furthermore, I saw a lot of the tweets were retweets, which in plaintext manifests as prefix:
 ```
-RT @celava_ti_mama:
+RT @celava_ti_mama: ...
 ```
 I decided to include these tweets in the dataset for now as I suspect the majority of the Twitter users mostly retweet tweets in their own language. The aforementioned prefix will be stripped. The processed data was saved as a json file containing usernames, their annotated language and a list of all the tweets.
 
+I later found that some tweets had this tag in the middle, probably indicating a retweet with a comment. I will have to deal with this later.
+
+# Model training and analysis 
+
+After a model was trained in fasttext I used it briefly on sample data. I checked the data distributions by language and it is interesting:
+
+![SETIMES train data](/images/setimes%20train.png Training data distribution by language)
+
+![SETIMES test data](/images/setimes%20test.png Testing data distribution by language)
+
+![Twitter data](/images/twitter.png Twitter data distribution by language)
