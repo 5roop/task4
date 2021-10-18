@@ -137,4 +137,4 @@ F1 score: 0.246
 
 I also prepared a preliminary version of visualization for classification results, which in its current form is not yet interactive, but it is offering some insight into the working of the algorithm nonetheless.
 
-![LIME library colouring the words as either contributing to the label or not.](.images/lime.png)
+![LIME library colouring the words as either contributing to the label or not.](./images/lime.png)
