@@ -116,3 +116,21 @@ After a model was trained in fasttext I used it briefly on sample data. I checke
 ![SETIMES test data](./images/setimes%20test.png)
 
 ![Twitter data](./images/twitter.png)
+
+I will preserve the data as is for the time being. In the future the discrepancy in the SETIMES data could be corrected by including the BS data instances twice to roughly even the ratios of languages.
+
+After evaluating the model by hand on test data (as opposed to the results of fasttext built-in methods) I again noticed unusually high performance:
+
+```
+Accuracy: 0.997
+F1 score: 0.996
+```
+
+For this result I used the model, trained on SETIMES train data, and predicted the language of the SETIMES test data.
+
+When I used the same model on twitter data, the metrics were more modest:
+
+```
+Accuracy: 0.375
+F1 score: 0.246
+```
