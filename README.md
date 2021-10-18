@@ -117,7 +117,7 @@ After a model was trained in fasttext I used it briefly on sample data. I checke
 
 ![Twitter data](./images/twitter.png)
 
-I will preserve the data as is for the time being. In the future the discrepancy in the SETIMES data could be corrected by including the BS data instances twice to roughly even the ratios of languages.
+I will preserve the data as is for the time being. In the future the discrepancy in the SETIMES data could be corrected by including the BS data instances twice to roughly even the ratios of languages. This of course would not work for Macedonian tweets, for which the only available datasource is the twitter dataset.
 
 After evaluating the model by hand on test data (as opposed to the results of fasttext built-in methods) I again noticed unusually high performance:
 
@@ -138,3 +138,7 @@ F1 score: 0.246
 I also prepared a preliminary version of visualization for classification results, which in its current form is not yet interactive, but it is offering some insight into the working of the algorithm nonetheless.
 
 ![LIME library colouring the words as either contributing to the label or not.](./images/lime.png)
+
+It can be seen that the most indicative words are usually not semantic word variants, but instead stop words commonly used in all three languages. This perhaps should not be surprising, as some BCMS variants differ also in syntactic uses of the language, expressed with combination of these stopwords.
+
+I suspect lexical differences might also be captured and visualized by using a _proper_ tokenizer, but this might be difficult to get from fasttext.
