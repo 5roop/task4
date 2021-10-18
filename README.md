@@ -117,7 +117,7 @@ After a model was trained in fasttext I used it briefly on sample data. I checke
 
 ![Twitter data](./images/twitter.png)
 
-I will preserve the data as is for the time being. In the future the discrepancy in the SETIMES data could be corrected by including the BS data instances twice to roughly even the ratios of languages. This of course would not work for Macedonian tweets, for which the only available datasource is the twitter dataset.
+I will preserve the data as is for the time being. In the future the discrepancy in the SETIMES data could be corrected by including the BS data instances twice to roughly even the ratios of languages. This of course would not work for Montenegrin tweets, for which the only available datasource is the twitter dataset. Even after CLARIN webcrawls will have been included the situation will be miserable for Montenegrin language.
 
 After evaluating the model by hand on test data (as opposed to the results of fasttext built-in methods) I again noticed unusually high performance:
 
@@ -142,3 +142,5 @@ I also prepared a preliminary version of visualization for classification result
 It can be seen that the most indicative words are usually not semantic word variants, but instead stop words commonly used in all three languages. This perhaps should not be surprising, as some BCMS variants differ also in syntactic uses of the language, expressed with combination of these stopwords.
 
 I suspect lexical differences might also be captured and visualized by using a _proper_ tokenizer, but this might be difficult to get from fasttext.
+
+
