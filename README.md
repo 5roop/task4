@@ -111,8 +111,8 @@ I later found that some tweets had this tag in the middle, probably indicating a
 
 After a model was trained in fasttext I used it briefly on sample data. I checked the data distributions by language and it is interesting:
 
-![SETIMES train data](/images/setimes%20train.png Training data distribution by language)
+![SETIMES train data](./images/setimes%20train.png)
 
-![SETIMES test data](/images/setimes%20test.png Testing data distribution by language)
+![SETIMES test data](./images/setimes%20test.png)
 
-![Twitter data](/images/twitter.png Twitter data distribution by language)
+![Twitter data](./images/twitter.png)
