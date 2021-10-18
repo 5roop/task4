@@ -143,4 +143,8 @@ It can be seen that the most indicative words are usually not semantic word vari
 
 I suspect lexical differences might also be captured and visualized by using a _proper_ tokenizer, but this might be difficult to get from fasttext.
 
+# Corrections after mondays meeting
 
+The SETIMES dataset must be structured in a more correct fashion that prevents data leakage. 
+
+I shall repeat the processing in new IPython notebook for reproducibility, but previously used data files will be overwritten.
