@@ -266,4 +266,9 @@ Accuracy: 0.989
 F1 score: 0.989
 ```
 
-In the next run I increased the maximal number of character n-grams to 10.
+In the next run I increased the maximal number of character n-grams to 10, but this did not improve the metrics:
+
+```
+Accuracy: 0.989
+F1 score: 0.989
+```
