@@ -151,3 +151,69 @@ I shall repeat the processing in new IPython notebook for reproducibility, but p
 
 I encountered some problems with connectivity that stemmed from the lack of diskspace due to all the clarin web crawl data. They have temporarily been deleted.
 
+As per the weekly meeting I will prepare a train-dev-test split in the SETIMES dataset. For this I counted the lines in all three relevant files:
+
+```
+setimes.bs-hr.hr.txt 138402 
+	split 1: 110721, split 2: 124561
+setimes.bs-sr.sr.txt 135945 
+	split 1: 108756, split 2: 122350
+setimes.bs-sr.bs.txt 135945 
+	split 1: 108756, split 2: 122350
+```
+
+To identify the same place I checked the 110721-st line in the first file:
+```
+$ sed -n '110721p' < ../../Varieties/BCMS/setimes.bs-hr.hr.txt
+Kada je list The Economist pozvao birače na potporu oporbenoj CHP na nedavno održanim općim izborima u Turskoj, premijer Recep Tayyip Erdogan naznačio je da je za to možda kriv Izrael.
+```
+
+I identified the beginning of the document, which is shown here:
+
+```
+Budući da se Srbija sprema za opće izbore sljedeće godine, postoji sve veći pritisak na političare i kandidate da razviju svijest o snazi Facebooka.
+S obzirom na neizvjesne utrke i žestoku kampanju koja slijedi, sposobnost korištenja društvenih medija mogla bi biti odlučujući čimbenik.
+<--- DOCUMENT BORDER --->
+Zapadni mediji i Erdogan: Odljubljivanje? 
+Godina 2011. mogla bi biti upamćena kao godina u kojoj su se zapadni mediji ‘odljubili’ od turske vladajuće AKP.
+Što se promijenilo?
+Alexander Christie-Miller za Southeast European Times iz Istanbula – 21/06/11
+Neke zapadne medijske kuće nedavno su se okrenule protiv premijera Erdogana. [Reuters]
+Kada je list The Economist pozvao birače na potporu oporbenoj CHP na nedavno održanim općim izborima u Turskoj, premijer Recep Tayyip Erdogan naznačio je da je za to možda kriv Izrael.
+```
+
+In Bosnian dataset the same document is identified here:
+```
+Sa pripremama za opće izbore naredne godine u Srbiji, dolazi do povećanog pritiska na političare i kandidate da budu obavješteniji po pitanju Facebooka.
+S predstojećim tijesnim utrkama i oštrim kampanjama, sposobnost zauzdavanja društvenih medija mogla bi predstavljati odlučujući faktor
+<--- DOCUMENT BORDER --->
+Zapadni mediji i Erdogan: ljubav prestaje?
+Godina 2011. mogla bi biti zabilježena kao godina kad su zapadni mediji 'prestali s ljubavlju' prema vladajućoj turskoj stranci AKP.
+Šta je pošlo nakrivo?
+Alexander Christie-Miller za Southeast European Times iz Istanbula – 21/06/11
+Neke zapadne medijske kuće nedavno su se okrenule na premijera Erdogana. [Reuters]
+Kad je časopis The Economist glasače pozvao da podrže opozicionu CHP na nedavnim općim izborima u Turskoj, premijer Recep Tayyip Erdogan nagovijestio je da bi za to mogao biti kriv Izrael.
+```
+
+And in Serbian:
+
+```
+S obzirom da se Srbija sprema za opšte izbore sledeće godine, sve je veći pritisak na političare i kandidate da postanu svesniji Fejsbuka.
+S obzirom na tesne trke i žestoku kampanju koja sledi, sposobnost da se iskoriste društveni mediji mogla bi da bude odlučujući faktor.
+<--- DOCUMENT BORDER --->
+Zapadni mediji i Erdogan: Odljubljivanje?
+Godina 2011. mogla bi da se pamti kao godina u kojoj su se zapadni mediji ‘odljubili’ od turske vladajuće AKP.
+Šta se promenilo?
+Neke zapadne medijske kuće nedavno su se okrenule preotiv premijera Erdogana. [Rojters]
+Kada je magazin Ekonomist pozvao birače da podrže opozicionu CHP na nedavno održanim opštim izborima u Turskoj, premijer Redžep Tajip Erdogan nagovestio je da je za to možda kriv Izrael.
+```
+
+In a similar fashion the second split has been identified in all three datasets. For reproducibility they are logged below:
+
+|split|hr|bs|sr|
+|---|---|---|---|
+| 1|110716 |110716 | 108659|
+|2|124549|124549|112302|
+
+Special care was taken to prevent dual inclusion of the lines, as `sed -n '1,2' file` will print first and second line. The data was split and stored in the interim directory, awaiting further processing (i.e. automated document splitting by the existing heuristic algorithm).
+
