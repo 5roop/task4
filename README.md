@@ -217,3 +217,44 @@ In a similar fashion the second split has been identified in all three datasets.
 
 Special care was taken to prevent dual inclusion of the lines, as `sed -n '1,2' file` will print first and second line. The data was split and stored in the interim directory, awaiting further processing (i.e. automated document splitting by the existing heuristic algorithm).
 
+Searching for:  {beginning} Southeast European Times {end}
+|filename | count |
+|---|---|
+|hr_train.txt| 2577|
+|bs_train.txt| 2591|
+|sr_train.txt| 2289|
+|hr_dev.txt| 328|
+|bs_dev.txt| 327|
+|sr_dev.txt| 307|
+|hr_test.txt| 312|
+|bs_test.txt| 312|
+|sr_test.txt| 295|
+
+Searching for:  {beginning}Southeast European Times{middle}{dd:d}/{mm:d}/{yy:d}
+
+|filename | count |
+|---|---|
+|hr_train.txt| 2495|
+|bs_train.txt| 2518|
+|sr_train.txt| 1455|
+|hr_dev.txt| 319|
+|bs_dev.txt| 323|
+|sr_dev.txt| 212|
+|hr_test.txt| 305|
+|bs_test.txt| 306|
+|sr_test.txt| 183|
+
+After some examination, particularly of the Serbian dataset, it was found that the following works quite well:
+
+Searching for:  {beginning}Southeast European Times{middle}{dd:d}{sep1}{mm:d}{sep2}{yy:d}{end}
+|filename | count |
+|---|---|
+|hr_train.txt| 2557|
+|bs_train.txt| 2557|
+|sr_train.txt| 2261|
+|hr_dev.txt| 326|
+|bs_dev.txt| 326|
+|sr_dev.txt| 308|
+|hr_test.txt| 310|
+|bs_test.txt| 309|
+|sr_test.txt| 295|
