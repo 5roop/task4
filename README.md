@@ -147,4 +147,7 @@ I suspect lexical differences might also be captured and visualized by using a _
 
 The SETIMES dataset must be structured in a more correct fashion that prevents data leakage. 
 
-I shall repeat the processing in new IPython notebook for reproducibility, but previously used data files will be overwritten.
+I shall repeat the processing in new IPython notebook for reproducibility, but previously used data files will be overwritten. 
+
+I encountered some problems with connectivity that stemmed from the lack of diskspace due to all the clarin web crawl data. They have temporarily been deleted.
+
