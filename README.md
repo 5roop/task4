@@ -258,3 +258,12 @@ Searching for:  {beginning}Southeast European Times{middle}{dd:d}{sep1}{mm:d}{se
 |hr_test.txt| 310|
 |bs_test.txt| 309|
 |sr_test.txt| 295|
+
+After this splitting has been found I proceeded with training a fasttext model. Given that we also prepared a `dev` split we can use it to optimize fasttext hyperparameters. As before the optimization time was capped at 600 seconds. Only SETIMES dataset was used for the training. Before tweaking the tokenization parameters the results are as follows:
+
+```
+Accuracy: 0.989
+F1 score: 0.989
+```
+
+In the next run I increased the maximal number of character n-grams to 10.
