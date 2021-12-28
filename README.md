@@ -274,3 +274,17 @@ F1 score: 0.989
 ```
 My next attempt was increasing the wordNgram parameter to 4, which might cover some syntactical differences. Interestingly, the model actually performed way worse: Accuracy: 0.475
 F1 score: 0.382
+
+# Addendum 2021-12-28T08:18:17
+
+I revisited the twitter dataset and discovered I can clean it better. First I improved the retweet text replacing function, and then I checked what characters appear in the tweets. It is concearning. I extract 1170 different characters, other than normal latin characters also a great deal of emojis, some asian characters, and some raw unicode characters (e.g. '\U000fe330', '\x94',...) These will have to be removed. I counted their occurances and found that the frequency dropps off radically fast, so most of the text is ok. See [file](/home/peterr/macocu/taskB/task4/8_counts_of_original_tweet_characters.csv).
+
+I found a snippet that only allows latin characters, which includes "exotic" letters like `'Šđßå'`, but filters out math symbols, currency characters, emojis and asian characters. The preprocessing will be performed anew and since the preprocessing takes a while and it's a breeding ground for bugs, I suggest the data be split and saved.
+
+The problem with the preprocessing as implemented is that the results are now quite weird; emoticons like `:D` now become just `D` and the punctuation is removed. 
+
+Summarized approaches and problems:
+* `import regex; result = regex.sub(u'[^\p{Latin}]', u'', tweet)`: removes the puctuation as well
+* `re.sub(u'[^\x00-\x7F\x80-\xFF\u0100-\u017F\u0180-\u024F\u1E00-\u1EFF]', u'', tweet)`: does not remove math symbols and similar chars.
+
+I opted for option 2. I pickled the dictionary containing the tweets as [/home/peterr/macocu/taskB/data/final/twitter_full_ds.pickle](/home/peterr/macocu/taskB/data/final/twitter_full_ds.pickle).
