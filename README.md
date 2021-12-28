@@ -298,6 +298,26 @@ To discuss with Nikola:
 
 Reminder of where we left off:
 > what is with montenegrin? how is it classified? can we somehow synthesize data for that category?
+> 
 > can we somehow visualise the classifier decisions, might be very useful for understanding what we have and what we need
+> 
 > what is the setup that will make good classifiers for all three (news, web, twitter)?
+> 
 > is the classification over twitter data better if mentions, hashtags, urls are removed?
+
+I also noticed fasttext would not work if string to be predicted contains newlines. I added this newline removal to the preprocessing pipeline and saved the new data.
+
+I repeated the finetuning on SETimes data which works like a charm:
+```
+Accuracy: 0.991
+F1 score: 0.991 (macro)
+```
+
+With the model thus obtained I predicted the language of the Twitter dataset. It did not go as flawlessly:
+```
+Macro f1: 0.262
+Micro f1: 0.42
+Accuracy: 0.42
+```
+
+![](images/SETimes_model_on_twitter_CM.png)
