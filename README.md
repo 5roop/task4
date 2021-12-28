@@ -288,3 +288,16 @@ Summarized approaches and problems:
 * `re.sub(u'[^\x00-\x7F\x80-\xFF\u0100-\u017F\u0180-\u024F\u1E00-\u1EFF]', u'', tweet)`: does not remove math symbols and similar chars.
 
 I opted for option 2. I pickled the dictionary containing the tweets as [/home/peterr/macocu/taskB/data/final/twitter_full_ds.pickle](/home/peterr/macocu/taskB/data/final/twitter_full_ds.pickle).
+
+
+# Addendum 2021-12-28T11:09:01
+
+To discuss with Nikola:
+* Future steps: construct a combined dataset from SETimes and twitter and test it?
+* ~~I deleted the webcrawl data in one episode of desperately cleaning the disk to assure training, can I get the link again? ~~ Found the [link](http://hdl.handle.net/11356/1426) Now we can use it.
+
+Reminder of where we left off:
+> what is with montenegrin? how is it classified? can we somehow synthesize data for that category?
+> can we somehow visualise the classifier decisions, might be very useful for understanding what we have and what we need
+> what is the setup that will make good classifiers for all three (news, web, twitter)?
+> is the classification over twitter data better if mentions, hashtags, urls are removed?
