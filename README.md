@@ -292,18 +292,6 @@ I opted for option 2. I pickled the dictionary containing the tweets as [/home/p
 
 # Addendum 2021-12-28T11:09:01
 
-To discuss with Nikola:
-* Future steps: construct a combined dataset from SETimes and twitter and test it?
-* ~~I deleted the webcrawl data in one episode of desperately cleaning the disk to assure training, can I get the link again? ~~ Found the [link](http://hdl.handle.net/11356/1426) Now we can use it.
-
-Reminder of where we left off:
-> what is with montenegrin? how is it classified? can we somehow synthesize data for that category?
-> 
-> can we somehow visualise the classifier decisions, might be very useful for understanding what we have and what we need
-> 
-> what is the setup that will make good classifiers for all three (news, web, twitter)?
-> 
-> is the classification over twitter data better if mentions, hashtags, urls are removed?
 
 I also noticed fasttext would not work if string to be predicted contains newlines. I added this newline removal to the preprocessing pipeline and saved the new data.
 
@@ -321,3 +309,55 @@ Accuracy: 0.42
 ```
 
 ![](images/SETimes_model_on_twitter_CM.png)
+
+To discuss with Nikola:
+* Future steps
+* ~~I deleted the webcrawl data in one episode of desperately cleaning the disk to assure training, can I get the link again? ~~ Found the [link](http://hdl.handle.net/11356/1426) Now we can use it.
+
+Reminder of where we left off:
+> what is with montenegrin? how is it classified? can we somehow synthesize data for that category?
+> 
+> can we somehow visualise the classifier decisions, might be very useful for understanding what we have and what we need
+> 
+> what is the setup that will make good classifiers for all three (news, web, twitter)?
+> 
+> is the classification over twitter data better if mentions, hashtags, urls are removed?
+
+For now I can answer the following:
+* Montenegrin is pretty much randomly classified. I don't think we'll be able to synthesize anything with fasttext, shall we go to transformers?
+* We can visualize classifier decisions. This has been already demonstrated with Lime in October, and the same framework can be extended even further.
+* That is the final problem.
+
+# Meeting notes 2021-12-28T13:49:17
+
+* Classify `users`, not individual tweets! Use the same model.
+* Get also tweet count for each user. Should be O(100) or more.
+* After this: we'll start with larger corpora (linked above). Think about efficient preprocessing and token importance calculation. Google `true casing`, but probably we won't have to do that here as we have lots of data.
+
+# Addendum 2021-12-28T18:52:51
+
+I repeated the analysis on user level and it is muuch better :) 
+
+```
+Macro f1: 0.379
+Micro f1: 0.707
+Accuracy: 0.707
+```
+
+![](images/SETimes_model_on_twitter_CM_on_user_level.png)
+
+I also checked the stats on the number of the users and as Nikola foretold, we always have at least 100 tweets for each user, so we suspect we have a solid sample.
+
+```
+Tweets per user:
+count     614.000000
+mean      635.615635
+std       430.146903
+min       100.000000
+25%       280.000000
+50%       489.000000
+75%       925.750000
+max      1779.000000
+```
+
+
