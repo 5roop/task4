@@ -416,3 +416,26 @@ SR-HR-feat-candidates
 ```
 
 Target: get list of strongest features for CR to discriminate against SR and vice versa, and expand this to all combinations.
+
+# Addendum 2021-12-29T14:26:12
+
+So, let's get started. I'm opening a new notebook to sort it out. I started by creating a toy dataset with the first 10000 lines from all files to test, but this will have to be increased in the future to get better distribution estimates.
+
+
+
+# Addendum 2021-12-29T16:10:37
+
+I prepared the second part of the machinery, namely a script to generate the frequency dictionary. On the toy corpus it takes about 11s to get generated, so I think this will not be the bottleneck. Upon brief inspection I noticed that we get some unwanted behavior, specifically stuff like:
+
+```
+ 'vještine\n': 80,
+ 'nastali': 200,
+ 'razni': 224,
+ 'stilovi\n': 4,
+ ```
+
+This will be corrected within the frequency extractor itself.
+
+# Addendum 2021-12-29T17:54:58
+
+The frequency extractor has been corrected and for the toy corpora the resulting jsons are ready and added to the repo.
