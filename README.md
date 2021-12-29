@@ -375,10 +375,13 @@ Filesizes:
 
 
 Memos on preprocessing:
+* Transliteration?
 * Splitting on blank lines: either `csplit`, `sed`, or with python.
 * Delete all numbers.
 * Delete all words that contain any capital letters.
 * Delete all punctuation.
 
 These steps can't be guaranteed to be commutative (e.g.: line `USLUGE KOMORE` would be replaced with a single space, which could be picked up as a blank line if implementation is not precise).
+
+As fasttext can't process multiline input it would also be a good idea to squash documents into a single line.
 
