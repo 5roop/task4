@@ -361,3 +361,24 @@ max      1779.000000
 ```
 
 
+
+
+# Addendum 2021-12-29T11:55:13
+
+I downloaded and unzipped all the files to `~/macocu/taskB/data/raw`.
+
+Filesizes:
+* SR: 3 GB
+* HR: 7.4 GB
+* CNR: 558 MB
+* BS: 1.6 GB
+
+
+Memos on preprocessing:
+* Splitting on blank lines: either `csplit`, `sed`, or with python.
+* Delete all numbers.
+* Delete all words that contain any capital letters.
+* Delete all punctuation.
+
+These steps can't be guaranteed to be commutative (e.g.: line `USLUGE KOMORE` would be replaced with a single space, which could be picked up as a blank line if implementation is not precise).
+
