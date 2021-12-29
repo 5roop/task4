@@ -385,3 +385,34 @@ These steps can't be guaranteed to be commutative (e.g.: line `USLUGE KOMORE` wo
 
 As fasttext can't process multiline input it would also be a good idea to squash documents into a single line.
 
+
+
+# Meeting notes 2021-12-29T13:29:00
+
+* use python to preprocess crawl data
+* transliterate cnrwac
+* ignore tokens with less than 20 occurences for now
+* see skype chat for the idea of token frequency dictionary
+* start with toy samples, not the entire dataset
+* don't lose time with punctuation removal, should work also with the DS as is. Might repeat the calculation later to check differences.
+* we are after good results on long documents, don't worry about edge cases
+
+
+```
+Nikola, 1:31 PM
+dict={}
+for token in line.split():
+if token in dict:
+add to dict
+elif token satisfies regex:
+add to dict
+regex - low-cased alphabet ([a-zšđčćž])
+O(1)
+\w\D
+Nikola, 1:42 PM
+d[k]=d.get(k,0)+1
+HR-SR-feat-candidates
+SR-HR-feat-candidates
+```
+
+Target: get list of strongest features for CR to discriminate against SR and vice versa, and expand this to all combinations.
