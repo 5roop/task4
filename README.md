@@ -525,3 +525,7 @@ Let's check how the distributions of token importances look like:
 ![](images/distribution_of_token_importances.png)
 
 We can see that for more different lanugages we get more highly ranked tokens, which seems logical. For closely-related languages (HR-BS) most of the importances are low and we get none that would be ranked highly.
+
+For a sense of magnitude I also include a full picture of the distribution:
+
+![](images/distribution_of_token_importances_full_scale.png)
