@@ -529,3 +529,24 @@ We can see that for more different lanugages we get more highly ranked tokens, w
 For a sense of magnitude I also include a full picture of the distribution:
 
 ![](images/distribution_of_token_importances_full_scale.png)
+
+What we saw now was not particularly difficult, and I see no reason for sticking with the toy dataset. 
+
+Intuitively we can see that the neutral point for importance would be around 1. We can see this if we check the values for the token "i", which should be non-deterministic for all languages:
+
+```
+HR_SR     0.985521
+SR_HR     1.014692
+HR_CNR    0.958717
+CNR_HR    1.043060
+HR_BS     1.036843
+BS_HR     0.964466
+BS_SR     0.950502
+SR_BS     1.052076
+BS_CNR    0.924650
+CNR_BS    1.081490
+CNR_SR    1.027958
+SR_CNR    0.972802
+```
+
+So the most important features are the ones with either big ranking, swaying the decision toward a language, but also the ones with really small ranking, whose occurrence would indicate this is the other language.
