@@ -549,4 +549,9 @@ CNR_SR    1.027958
 SR_CNR    0.972802
 ```
 
-So the most important features are the ones with either big ranking, swaying the decision toward a language, but also the ones with really small ranking, whose occurrence would indicate this is the other language.
+So the most important features are the ones with either big ranking, swaying the decision toward a language, but also the ones with really small ranking, whose occurrence would indicate this is the other language (`blacklisted words`).
+
+With this in mind I checked the distribution again, this time in log-log scale, so that we would catch also the distribution in the blacklist region of the plot:
+
+![](images/distribution_of_token_importances_full_scale_log_log.png)
+
