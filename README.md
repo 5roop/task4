@@ -439,3 +439,79 @@ This will be corrected within the frequency extractor itself.
 # Addendum 2021-12-29T17:54:58
 
 The frequency extractor has been corrected and for the toy corpora the resulting jsons are ready and added to the repo.
+
+
+
+# Addendum 2021-12-30T08:07:31
+
+I started with the combination of HR <-> SR toy corpora.
+
+For the most important features that distinguish Croatian toy corpus from the Serbian, I get the following table (only the first 30 items are shown):
+
+|              |    HR_SR |      SR_HR |
+|:-------------|---------:|-----------:|
+| kn           | 179.556  | 0.0055693  |
+| sustav       | 150.153  | 0.00665988 |
+| sustava      | 149.265  | 0.00669948 |
+| suradnji     | 125.406  | 0.00797411 |
+| natjecanja   | 115.761  | 0.0086385  |
+| lipnja       | 110.973  | 0.00901122 |
+| rujna        | 110.86   | 0.00902038 |
+| okoliša      | 110.521  | 0.00904808 |
+| tvrtke       | 109.443  | 0.00913722 |
+| svibnja      | 109.307  | 0.00914858 |
+| ožujka       | 109.117  | 0.00916446 |
+| travnja      | 107.848  | 0.00927227 |
+| udruge       | 105.651  | 0.00946512 |
+| listopada    | 103.449  | 0.0096666  |
+| uvjetima     |  84.6988 | 0.0118065  |
+| veljače      |  84.0536 | 0.0118972  |
+| gospodarstva |  82.3719 | 0.0121401  |
+| sudionika    |  81.2523 | 0.0123073  |
+| primjerice   |  80.2788 | 0.0124566  |
+| udruga       |  80.1087 | 0.012483   |
+| tjedna       |  78.8446 | 0.0126832  |
+| kuna         |  78.6973 | 0.0127069  |
+| županije     |  78.1412 | 0.0127974  |
+| sudjelovanje |  77.9331 | 0.0128315  |
+| milijuna     |  77.1661 | 0.0129591  |
+| tijekom      |  76.9481 | 0.0129958  |
+| siječnja     |  76.888  | 0.0130059  |
+| natjecanje   |  76.3397 | 0.0130993  |
+| glazbe       |  75.3042 | 0.0132795  |
+| tvrtki       |  75.1313 | 0.01331    |
+
+Mutatis mutandis, we can get the importances of Serbian tokens in comparison with the Croatian corpus:
+
+|             |   SR_HR |      HR_SR |
+|:------------|--------:|-----------:|
+| rešenja     | 203.882 | 0.0049048  |
+| odsto       | 195.017 | 0.00512775 |
+| opštine     | 193.647 | 0.00516403 |
+| preduzeća   | 186.179 | 0.00537119 |
+| gde         | 167.978 | 0.00595317 |
+| deo         | 164.964 | 0.00606195 |
+| cena        | 164.217 | 0.00608949 |
+| mesta       | 163.866 | 0.00610255 |
+| cene        | 163.412 | 0.00611949 |
+| evra        | 157.018 | 0.00636869 |
+| časova      | 155.753 | 0.00642043 |
+| predsednika | 154.401 | 0.00647663 |
+| saradnji    | 152.997 | 0.00653608 |
+| vreme       | 139.484 | 0.00716929 |
+| meseca      | 138.417 | 0.00722453 |
+| predsednik  | 134.998 | 0.00740753 |
+| dece        | 132.495 | 0.00754746 |
+| meseci      | 125.721 | 0.00795413 |
+| uslovima    | 124.393 | 0.00803905 |
+| uvek        | 122.46  | 0.00816596 |
+| delu        | 121.249 | 0.00824752 |
+| posle       | 119.203 | 0.00838903 |
+| dve         | 117.117 | 0.00853847 |
+| korišćenje  | 114.489 | 0.00873448 |
+| decu        | 112.382 | 0.0088982  |
+| mesto       | 111.11  | 0.00900005 |
+| čoveka      | 110.924 | 0.00901519 |
+| zahteva     | 109.001 | 0.00917422 |
+| dela        | 108.295 | 0.00923403 |
+| saradnje    | 106.124 | 0.00942292 |
