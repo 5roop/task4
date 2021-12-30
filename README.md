@@ -515,3 +515,5 @@ Mutatis mutandis, we can get the importances of Serbian tokens in comparison wit
 | zahteva     | 109.001 | 0.00917422 |
 | dela        | 108.295 | 0.00923403 |
 | saradnje    | 106.124 | 0.00942292 |
+
+What we should improve is replacing all `NaN` values that occur because a token was not present in corpus and repeat the analysis to get more realistic numbers. I did this, but this specific example did not change. 
