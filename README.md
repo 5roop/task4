@@ -517,3 +517,6 @@ Mutatis mutandis, we can get the importances of Serbian tokens in comparison wit
 | saradnje    | 106.124 | 0.00942292 |
 
 What we should improve is replacing all `NaN` values that occur because a token was not present in corpus and repeat the analysis to get more realistic numbers. I did this, but this specific example did not change. 
+
+All of the information for HR_SR is contained in one column, if we wanted to extract values for SR_HR comparison, we need only to invert the values in the HR_SR column. This means we need to populate only one half of the matrix {HR, SR, BS, CNR} × {HR, SR, BS, CNR}, so that is 6 combinations.
+
