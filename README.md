@@ -613,4 +613,18 @@ Accuracy: 0.816
 
 From this we postulate that using binary vectorizer is better than using the actual token counts.
 
-I will proceed with using the SETimes dataset as evaluation dataset.
+I will proceed with using the SETimes dataset as evaluation dataset. I expect the training times to get a bit longer due to the linear nature of NB classifier, the results will likely be better because we have no montenegrin, so the metrics might be higher due to that.
+
+It turned out I was sorely mistaken; even tho we have much more data, the pipeline only needed 3min10s to run.
+```
+Clf: Naive Bayes
+Train: tail_pp
+Test: SETimes
+remarks: 5k tokens, BINARY Count Vectorizer
+Macro f1: 0.826
+Micro f1: 0.816
+Accuracy: 0.826
+```
+
+
+![](images/13_Naive_Bayes_on_SETimes_binary_vectorizer.png)
