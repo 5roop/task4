@@ -579,3 +579,22 @@ First I shall prepare two new datasets; first 1M lines should be used for featur
 
 
 I implemented a pipeline that preprocessed the data and allowed me to use the web corpus as training dataset for a classifier. I used the top 5k words from every language as a vocabulary for `CountVectorizer` from `sklearn.feature_extraction.text`. I noticed that SVC takes a loong time to train, so after 30 minutes of training I iterrupted it and opted for a NaiveBayes classifier. For evaluation dataset I used the Twitter dataset, because it has Montenegrin instances as well. This will be soon changed to SETimes, but there the preparation is a bit lenghtier.
+
+For my first result I obtain the following:
+
+```
+Clf: Naive Bayes
+Train: tail_pp
+Test: Twitter
+remarks: 5k lexems, default Count Vectorizer
+Macro f1: 0.561
+Micro f1: 0.785
+Accuracy: 0.785
+```
+
+We see improvements on all metrics, but a look at the Confusion Matrix eveals montenegrin is still not recognised properly:
+
+
+![](images/13_Naive_Bayes_on_Twitter.png)
+
+Short training times with Naive Bayes (3 min instead of >30min for SVM) allows me to play around with some parameters.
