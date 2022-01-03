@@ -645,8 +645,18 @@ The second run confirmed the conclusions of the first run; the optimal number of
 
 ![](images/14_metrics.png)
 
-I also monitored the time needed to train, predict and the overall time. We can see that overall time has a baseline, owing to the fact that the vocabulary is constructed each time the training is run. This could be minimised to a fraction of its current value with caching.
+I also monitored the time needed to train, predict and the overall time. We can see that overall time has a baseline, owing to the fact that the vocabulary is constructed each time the training is run. ~~This could be minimised to a fraction of its current value with caching.~~ It turns out the vocabulary is not the bottle neck at all, instead the tokenization/vectorization is the process that dictates the runtime.
 
 As far as the times for training and predicting is concearned, the classifier behaves as advertised, with both times increasing linearly with the number of top features per language.
 
 ![](images/14_time.png)
+
+
+It should be noted that as soon as I approach 10k top tokens per language pair, I generate a CountVectorizer so massive, that it does not fit into the memory any more, meaning that the right edge of the plots is dictated by hardware limitations.
+
+On Twitter dataset the performance is simmilar, albeit less pronounced than that of SETimes. For completeness I repeated the scan for optimal `N` with lower limits, to hopefully convincingy prove there exists a maximum for micro- and macro-F1.
+
+![](images/14_metrics_twitter.png)
+
+
+This time the repeated experiments proved to be far uglier, less self-consistant and far less continuous as the previous batch. But we clearly see there is some optimal value somewhere between 1e2 and 1e3 features per language pair.
