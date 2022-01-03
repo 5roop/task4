@@ -555,3 +555,27 @@ With this in mind I checked the distribution again, this time in log-log scale, 
 
 ![](images/distribution_of_token_importances_full_scale_log_log.png)
 
+
+
+# Meeting notes 2021-12-30T14:12:16
+
+
+* Use two Web Crawl subsets: one for feature extraction, one for clf training.
+* Target nr of features: 5k, but make it a parameter.
+* Take the highest ranking features greedily for every of the 12 combinations.
+* Make a pipeline using CountVectorizer and SVM clfs
+* Eval on SETimes 
+* Fiddle with target nr of parameters to optimize it.
+
+
+
+# Addendum 2021-12-31T09:33:31
+
+First I shall prepare two new datasets; first 1M lines should be used for feature selection and the last 1M should be used for classifier training. I did this in `10_preprocessing.ipynb` and created the tail files in the same fashion as before.
+
+
+
+# Addendum 2022-01-03T10:12:44
+
+
+I implemented a pipeline that preprocessed the data and allowed me to use the web corpus as training dataset for a classifier. I used the top 5k words from every language as a vocabulary for `CountVectorizer` from `sklearn.feature_extraction.text`. I noticed that SVC takes a loong time to train, so after 30 minutes of training I iterrupted it and opted for a NaiveBayes classifier. For evaluation dataset I used the Twitter dataset, because it has Montenegrin instances as well. This will be soon changed to SETimes, but there the preparation is a bit lenghtier.
