@@ -586,7 +586,7 @@ For my first result I obtain the following:
 Clf: Naive Bayes
 Train: tail_pp
 Test: Twitter
-remarks: 5k lexems, default Count Vectorizer
+remarks: 5k tokens, default Count Vectorizer
 Macro f1: 0.561
 Micro f1: 0.785
 Accuracy: 0.785
@@ -597,4 +597,20 @@ We see improvements on all metrics, but a look at the Confusion Matrix eveals mo
 
 ![](images/13_Naive_Bayes_on_Twitter.png)
 
-Short training times with Naive Bayes (3 min instead of >30min for SVM) allows me to play around with some parameters.
+Short training times with Naive Bayes (3 min instead of >30min for SVM) allows me to play around with some parameters. I tried using binary CountVectorizer, meaning that we do not care for the real counts, only wheather or not the token occurs in the instance text. This is also a neat opportunity to measure the runtime for the entire pipeline (finding top N most frequent lexems, fitting the Count Vectorizer, transforming the train and test instances, training the classifier, and finally calculating performance metrics and plotting the confusion matrix.) In just 3 min 14s the code is run, and the results are even better:
+
+```
+Clf: Naive Bayes
+Train: tail_pp
+Test: Twitter
+remarks: 5k tokens, BINARY Count Vectorizer
+Macro f1: 0.608
+Micro f1: 0.816
+Accuracy: 0.816
+```
+
+![](images/13_Naive_Bayes_on_Twitter_binary_vectorizer.png)
+
+From this we postulate that using binary vectorizer is better than using the actual token counts.
+
+I will proceed with using the SETimes dataset as evaluation dataset.
