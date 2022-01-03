@@ -637,4 +637,16 @@ MemoryError: Unable to allocate 65.5 GiB for an array with shape (343841, 25562)
 Clearly something is happening under the hood that I should mitigate, but for now let's just remember the old proverb:
 > The root of all evil is premature optimization.
 
-I continued with making a function that would accept `N` and calculate the metrics automatically. This proved more difficult than imagined due to the fact that I would often encounter the same error as the one above.  The implementation in its current state is far from optimal, so I plan to attack the error with streamlining the 
+I continued with making a function that would accept `N` and calculate the metrics automatically. This proved more difficult than imagined due to the fact that I would often encounter the same error as the one above.
+
+As it turned out, I needed only to restart the kernel and it worked flawlessly. I ran the optimization in logarithmically spaced `N`, and after seeing the conclusions I repeated it once more with simmilar, but not equal parameters.
+
+The second run confirmed the conclusions of the first run; the optimal number of tokens per language is an order of magnitude lower than we suspected before, as these plots clearly show:
+
+![](images/14_metrics.png)
+
+I also monitored the time needed to train, predict and the overall time. We can see that overall time has a baseline, owing to the fact that the vocabulary is constructed each time the training is run. This could be minimised to a fraction of its current value with caching.
+
+As far as the times for training and predicting is concearned, the classifier behaves as advertised, with both times increasing linearly with the number of top features per language.
+
+![](images/14_time.png)
