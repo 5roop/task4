@@ -615,7 +615,7 @@ From this we postulate that using binary vectorizer is better than using the act
 
 I will proceed with using the SETimes dataset as evaluation dataset. I expect the training times to get a bit longer due to the linear nature of NB classifier, the results will likely be better because we have no montenegrin, so the metrics might be higher due to that.
 
-It turned out I was sorely mistaken; even tho we have much more data, the pipeline only needed 3min10s to run.
+It turned out I was sorely mistaken; even though we have much more data, the pipeline only needed 3min10s to run.
 ```
 Clf: Naive Bayes
 Train: tail_pp
@@ -628,3 +628,13 @@ Accuracy: 0.826
 
 
 ![](images/13_Naive_Bayes_on_SETimes_binary_vectorizer.png)
+
+I ran the pipeline once more to see what happens if I set the return type of the CountVectorizer to `np.bool`, which is definitely less demanding in terms of memory space, but maybe we can also improve the speed of the computation this way. It turns out I was sorely mistaken, because I got
+
+```python
+MemoryError: Unable to allocate 65.5 GiB for an array with shape (343841, 25562) and data type float64
+```
+Clearly something is happening under the hood that I should mitigate, but for now let's just remember the old proverb:
+> The root of all evil is premature optimization.
+
+I continued with making a function that would accept `N` and calculate the metrics automatically. This proved more difficult than imagined due to the fact that I would often encounter the same error as the one above.  The implementation in its current state is far from optimal, so I plan to attack the error with streamlining the 
