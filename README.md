@@ -659,10 +659,20 @@ On Twitter dataset the performance is simmilar, albeit less pronounced than that
 ![](images/14_metrics_twitter.png)
 
 
-This time the repeated experiments proved to be far uglier, less self-consistant and far less continuous as the previous batch. But we clearly see there is some optimal value somewhere between 1e2 and 1e3 features per language pair.
+This time the repeated experiments proved to be far uglier, less self-consistant and far less continuous as the previous batch. But we clearly see there is some optimal value somewhere between 1e2 and 1e3 features per language pair. The experiments will be repeated in the future.
+
 
 # Addendum 2022-01-04T09:04:04
-I rewrote the code for optimization on SVC. Even with only 10 features per language pair the SVC training takes a long time, and if the results won't be significantly better I suggest we stick with NB. As of right now the training for mere 10 features per language is at ~~11~~ ~~30~~ 66 minutes.
+I rewrote the code for optimization on SVC. Even with only 10 features per language pair the SVC training takes a long time, and if the results won't be significantly better I suggest we stick with NB. As of right now the training for mere 10 features per language is at ~~11~~ ~~30~~ ~~66~~ ~~73~~  ~~129~~ 167 minutes.
 
 
 I researched a bit and found that the temporal complexity of SVC is  `O(n_samples^2 * n_features) `, meaning that in our case we do have a linear increase with the number of features, but the majority contribution will be due to the number of samples.
+
+I found another implementation, `sklearn.SVM.LinearSVC`, which supposedly scales better. It turns out to be true, the iteration for 10 top features per language pair halted after 2 minutes, as opposed to more than an hour for the vanilla SVC. It was raising some ConvergenceWarnings though, so we will have to check the results to see if they are sensible.
+
+After the first scan through `N` space was completed, I checked the preliminary results. They are lower than those achieved with Naive Bayes, but they do exhibit the same profile, with the metrics being highest around O(500) features.
+
+
+As far as time is concearned, the overhead due to count vectorizer initiation is now barely visible. The vast majority of time is dedicated to training. Prediction times are simmilar to Naive Bayes.
+
+The scan was repeated again in approximately the same range. The results are pretty self-consistant.
