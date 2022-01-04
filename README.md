@@ -663,7 +663,7 @@ This time the repeated experiments proved to be far uglier, less self-consistant
 
 
 # Addendum 2022-01-04T09:04:04
-I rewrote the code for optimization on SVC. Even with only 10 features per language pair the SVC training takes a long time, and if the results won't be significantly better I suggest we stick with NB. As of right now the training for mere 10 features per language is at ~~11~~ ~~30~~ ~~66~~ ~~73~~  ~~129~~ ~~167~~ 205 minutes.
+I rewrote the code for optimization on SVC. Even with only 10 features per language pair the SVC training takes a long time, and if the results won't be significantly better I suggest we stick with NB. As of right now the training for mere 10 features per language is at ~~11~~ ~~30~~ ~~66~~ ~~73~~  ~~129~~ ~~167~~ ~~205~~ ~~317 minutes~~ 8 hours. I stopped it at this point.
 
 
 I researched a bit and found that the temporal complexity of SVC is  `O(n_samples^2 * n_features) `, meaning that in our case we do have a linear increase with the number of features, but the majority contribution will be due to the number of samples.
