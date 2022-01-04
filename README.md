@@ -16,47 +16,47 @@ My plan was to extract the documents from the `setimes` files. This would be don
 ``` 
 
 This proved tricky, because this separator does not appear at the same rate in the file pairs, e.g. the string count for `' za Southeast European Times '` varies quite a bit:
-|   file     | occurences     |     
-|---|---|
-|setimes.bs-hr.bs.txt |3220|
-|setimes.bs-hr.hr.txt |3190|
-|setimes.bs-sr.bs.txt |2890|
-|setimes.bs-sr.sr.txt |2866|
-|setimes.hr-sr.hr.txt |4471|
-|setimes.hr-sr.sr.txt |4482|
+| file                 | occurences |
+| -------------------- | ---------- |
+| setimes.bs-hr.bs.txt | 3220       |
+| setimes.bs-hr.hr.txt | 3190       |
+| setimes.bs-sr.bs.txt | 2890       |
+| setimes.bs-sr.sr.txt | 2866       |
+| setimes.hr-sr.hr.txt | 4471       |
+| setimes.hr-sr.sr.txt | 4482       |
 
 I had found out that the most equal delimiter was `'Southeast European Times'`:
 
-|   file     | occurences     |     
-|---|---|
-| setimes.bs-hr.bs.txt | 3377 |
-| setimes.bs-hr.hr.txt | 3377 |
-| setimes.bs-sr.bs.txt | 3047 |
-| setimes.bs-sr.sr.txt | 3046 |
-| setimes.hr-sr.hr.txt | 4774 |
-| setimes.hr-sr.sr.txt | 4773 |
+| file                 | occurences |
+| -------------------- | ---------- |
+| setimes.bs-hr.bs.txt | 3377       |
+| setimes.bs-hr.hr.txt | 3377       |
+| setimes.bs-sr.bs.txt | 3047       |
+| setimes.bs-sr.sr.txt | 3046       |
+| setimes.hr-sr.hr.txt | 4774       |
+| setimes.hr-sr.sr.txt | 4773       |
 
 SInce the goal of this task is variety classification and not macine translation, it will be presumed the precise structure of the documents does not matter much and no one-to-one sentence mapping will be performed.
 
 Once the data was processed more properly and finer details were included in the search, the results are as follows:
 
-|Searched for  `{name} za Southeast European Times {rest}\n` | count |
-| --- | --- |
-| setimes.bs-hr.bs.txt |  3222 |
-| setimes.bs-hr.hr.txt |  3192 |
-| setimes.bs-sr.bs.txt |  2892 |
-| setimes.bs-sr.sr.txt |  2869 |
-| setimes.hr-sr.hr.txt |  4473 |
-| setimes.hr-sr.sr.txt |  4485 |
+| Searched for  `{name} za Southeast European Times {rest}\n` | count |
+| ----------------------------------------------------------- | ----- |
+| setimes.bs-hr.bs.txt                                        | 3222  |
+| setimes.bs-hr.hr.txt                                        | 3192  |
+| setimes.bs-sr.bs.txt                                        | 2892  |
+| setimes.bs-sr.sr.txt                                        | 2869  |
+| setimes.hr-sr.hr.txt                                        | 4473  |
+| setimes.hr-sr.sr.txt                                        | 4485  |
 
-|Searched for `{beginning} Southeast European Times {end}\n` | count |
-| --- | --- |
-| setimes.bs-hr.bs.txt |  3230 |
-| setimes.bs-hr.hr.txt |  3217 |
-| setimes.bs-sr.bs.txt |  2900 |
-| setimes.bs-sr.sr.txt |  2891 |
-| setimes.hr-sr.hr.txt |  4505 |
-| setimes.hr-sr.sr.txt |  4510 |
+| Searched for `{beginning} Southeast European Times {end}\n` | count |
+| ----------------------------------------------------------- | ----- |
+| setimes.bs-hr.bs.txt                                        | 3230  |
+| setimes.bs-hr.hr.txt                                        | 3217  |
+| setimes.bs-sr.bs.txt                                        | 2900  |
+| setimes.bs-sr.sr.txt                                        | 2891  |
+| setimes.hr-sr.hr.txt                                        | 4505  |
+| setimes.hr-sr.sr.txt                                        | 4510  |
 
 I also examined lines that were not being picked up by my analysis:
 * Nataša Radić for Southeast European Times iz Zagreba -- 03/09/08
@@ -72,24 +72,24 @@ I implemented a regex search to get as much complete data as possible, focusing 
 
 ### regex: `Southeast European Times .*-- \d\d/\d\d/\d\d`
 
-|file| counts|
-|---|---|
-| setimes.bs-hr.bs.txt |  2940 |
-| setimes.bs-hr.hr.txt |  2596 |
-| setimes.bs-sr.bs.txt |  2619 |
-| setimes.bs-sr.sr.txt |  1684 |
-| setimes.hr-sr.hr.txt |  3179 |
-| setimes.hr-sr.sr.txt |  2566 |
+| file                 | counts |
+| -------------------- | ------ |
+| setimes.bs-hr.bs.txt | 2940   |
+| setimes.bs-hr.hr.txt | 2596   |
+| setimes.bs-sr.bs.txt | 2619   |
+| setimes.bs-sr.sr.txt | 1684   |
+| setimes.hr-sr.hr.txt | 3179   |
+| setimes.hr-sr.sr.txt | 2566   |
 
 ### regex: `([\w+]|[|Za|za|for|For]|^) Southeast European Times .*[-\-|–] \d\d/\d\d/\d\d`
-|file| counts|
-|---|---|
-| setimes.bs-hr.bs.txt |  3085 |
-| setimes.bs-hr.hr.txt |  3066 |
-| setimes.bs-sr.bs.txt |  2763 |
-| setimes.bs-sr.sr.txt |  1817 |
-| setimes.hr-sr.hr.txt |  4342 |
-| setimes.hr-sr.sr.txt |  3395 |
+| file                 | counts |
+| -------------------- | ------ |
+| setimes.bs-hr.bs.txt | 3085   |
+| setimes.bs-hr.hr.txt | 3066   |
+| setimes.bs-sr.bs.txt | 2763   |
+| setimes.bs-sr.sr.txt | 1817   |
+| setimes.hr-sr.hr.txt | 4342   |
+| setimes.hr-sr.sr.txt | 3395   |
 
 The fluctuations between text pairs is gigantic, so I decided to go forward with the second implementation, where I used `parse` library to search for `{beginning} Southeast European Times {end}\n` and where the counts agree to 0.4% or better.
 
@@ -210,54 +210,54 @@ Kada je magazin Ekonomist pozvao birače da podrže opozicionu CHP na nedavno od
 
 In a similar fashion the second split has been identified in all three datasets. For reproducibility they are logged below:
 
-|split|hr|bs|sr|
-|---|---|---|---|
-| 1|110716 |110716 | 108659|
-|2|124549|124549|112302|
+| split | hr     | bs     | sr     |
+| ----- | ------ | ------ | ------ |
+| 1     | 110716 | 110716 | 108659 |
+| 2     | 124549 | 124549 | 112302 |
 
 Special care was taken to prevent dual inclusion of the lines, as `sed -n '1,2' file` will print first and second line. The data was split and stored in the interim directory, awaiting further processing (i.e. automated document splitting by the existing heuristic algorithm).
 
 Searching for:  {beginning} Southeast European Times {end}
-|filename | count |
-|---|---|
-|hr_train.txt| 2577|
-|bs_train.txt| 2591|
-|sr_train.txt| 2289|
-|hr_dev.txt| 328|
-|bs_dev.txt| 327|
-|sr_dev.txt| 307|
-|hr_test.txt| 312|
-|bs_test.txt| 312|
-|sr_test.txt| 295|
+| filename     | count |
+| ------------ | ----- |
+| hr_train.txt | 2577  |
+| bs_train.txt | 2591  |
+| sr_train.txt | 2289  |
+| hr_dev.txt   | 328   |
+| bs_dev.txt   | 327   |
+| sr_dev.txt   | 307   |
+| hr_test.txt  | 312   |
+| bs_test.txt  | 312   |
+| sr_test.txt  | 295   |
 
 Searching for:  {beginning}Southeast European Times{middle}{dd:d}/{mm:d}/{yy:d}
 
-|filename | count |
-|---|---|
-|hr_train.txt| 2495|
-|bs_train.txt| 2518|
-|sr_train.txt| 1455|
-|hr_dev.txt| 319|
-|bs_dev.txt| 323|
-|sr_dev.txt| 212|
-|hr_test.txt| 305|
-|bs_test.txt| 306|
-|sr_test.txt| 183|
+| filename     | count |
+| ------------ | ----- |
+| hr_train.txt | 2495  |
+| bs_train.txt | 2518  |
+| sr_train.txt | 1455  |
+| hr_dev.txt   | 319   |
+| bs_dev.txt   | 323   |
+| sr_dev.txt   | 212   |
+| hr_test.txt  | 305   |
+| bs_test.txt  | 306   |
+| sr_test.txt  | 183   |
 
 After some examination, particularly of the Serbian dataset, it was found that the following works quite well:
 
 Searching for:  {beginning}Southeast European Times{middle}{dd:d}{sep1}{mm:d}{sep2}{yy:d}{end}
-|filename | count |
-|---|---|
-|hr_train.txt| 2557|
-|bs_train.txt| 2557|
-|sr_train.txt| 2261|
-|hr_dev.txt| 326|
-|bs_dev.txt| 326|
-|sr_dev.txt| 308|
-|hr_test.txt| 310|
-|bs_test.txt| 309|
-|sr_test.txt| 295|
+| filename     | count |
+| ------------ | ----- |
+| hr_train.txt | 2557  |
+| bs_train.txt | 2557  |
+| sr_train.txt | 2261  |
+| hr_dev.txt   | 326   |
+| bs_dev.txt   | 326   |
+| sr_dev.txt   | 308   |
+| hr_test.txt  | 310   |
+| bs_test.txt  | 309   |
+| sr_test.txt  | 295   |
 
 After this splitting has been found I proceeded with training a fasttext model. Given that we also prepared a `dev` split we can use it to optimize fasttext hyperparameters. As before the optimization time was capped at 600 seconds. Only SETIMES dataset was used for the training, validation and evaluation. Before tweaking the tokenization parameters the results are as follows:
 
@@ -448,44 +448,44 @@ I started with the combination of HR <-> SR toy corpora.
 
 For the most important features that distinguish Croatian toy corpus from the Serbian, I get the following table (only the first 30 items are shown):
 
-|              |    HR_SR |      SR_HR |
-|:-------------|---------:|-----------:|
-| kn           | 179.556  | 0.0055693  |
-| sustav       | 150.153  | 0.00665988 |
-| sustava      | 149.265  | 0.00669948 |
-| suradnji     | 125.406  | 0.00797411 |
-| natjecanja   | 115.761  | 0.0086385  |
-| lipnja       | 110.973  | 0.00901122 |
-| rujna        | 110.86   | 0.00902038 |
-| okoliša      | 110.521  | 0.00904808 |
-| tvrtke       | 109.443  | 0.00913722 |
-| svibnja      | 109.307  | 0.00914858 |
-| ožujka       | 109.117  | 0.00916446 |
-| travnja      | 107.848  | 0.00927227 |
-| udruge       | 105.651  | 0.00946512 |
-| listopada    | 103.449  | 0.0096666  |
-| uvjetima     |  84.6988 | 0.0118065  |
-| veljače      |  84.0536 | 0.0118972  |
-| gospodarstva |  82.3719 | 0.0121401  |
-| sudionika    |  81.2523 | 0.0123073  |
-| primjerice   |  80.2788 | 0.0124566  |
-| udruga       |  80.1087 | 0.012483   |
-| tjedna       |  78.8446 | 0.0126832  |
-| kuna         |  78.6973 | 0.0127069  |
-| županije     |  78.1412 | 0.0127974  |
-| sudjelovanje |  77.9331 | 0.0128315  |
-| milijuna     |  77.1661 | 0.0129591  |
-| tijekom      |  76.9481 | 0.0129958  |
-| siječnja     |  76.888  | 0.0130059  |
-| natjecanje   |  76.3397 | 0.0130993  |
-| glazbe       |  75.3042 | 0.0132795  |
-| tvrtki       |  75.1313 | 0.01331    |
+|              |   HR_SR |      SR_HR |
+| :----------- | ------: | ---------: |
+| kn           | 179.556 |  0.0055693 |
+| sustav       | 150.153 | 0.00665988 |
+| sustava      | 149.265 | 0.00669948 |
+| suradnji     | 125.406 | 0.00797411 |
+| natjecanja   | 115.761 |  0.0086385 |
+| lipnja       | 110.973 | 0.00901122 |
+| rujna        |  110.86 | 0.00902038 |
+| okoliša      | 110.521 | 0.00904808 |
+| tvrtke       | 109.443 | 0.00913722 |
+| svibnja      | 109.307 | 0.00914858 |
+| ožujka       | 109.117 | 0.00916446 |
+| travnja      | 107.848 | 0.00927227 |
+| udruge       | 105.651 | 0.00946512 |
+| listopada    | 103.449 |  0.0096666 |
+| uvjetima     | 84.6988 |  0.0118065 |
+| veljače      | 84.0536 |  0.0118972 |
+| gospodarstva | 82.3719 |  0.0121401 |
+| sudionika    | 81.2523 |  0.0123073 |
+| primjerice   | 80.2788 |  0.0124566 |
+| udruga       | 80.1087 |   0.012483 |
+| tjedna       | 78.8446 |  0.0126832 |
+| kuna         | 78.6973 |  0.0127069 |
+| županije     | 78.1412 |  0.0127974 |
+| sudjelovanje | 77.9331 |  0.0128315 |
+| milijuna     | 77.1661 |  0.0129591 |
+| tijekom      | 76.9481 |  0.0129958 |
+| siječnja     |  76.888 |  0.0130059 |
+| natjecanje   | 76.3397 |  0.0130993 |
+| glazbe       | 75.3042 |  0.0132795 |
+| tvrtki       | 75.1313 |    0.01331 |
 
 Mutatis mutandis, we can get the importances of Serbian tokens in comparison with the Croatian corpus:
 
 |             |   SR_HR |      HR_SR |
-|:------------|--------:|-----------:|
-| rešenja     | 203.882 | 0.0049048  |
+| :---------- | ------: | ---------: |
+| rešenja     | 203.882 |  0.0049048 |
 | odsto       | 195.017 | 0.00512775 |
 | opštine     | 193.647 | 0.00516403 |
 | preduzeća   | 186.179 | 0.00537119 |
@@ -504,13 +504,13 @@ Mutatis mutandis, we can get the importances of Serbian tokens in comparison wit
 | dece        | 132.495 | 0.00754746 |
 | meseci      | 125.721 | 0.00795413 |
 | uslovima    | 124.393 | 0.00803905 |
-| uvek        | 122.46  | 0.00816596 |
+| uvek        |  122.46 | 0.00816596 |
 | delu        | 121.249 | 0.00824752 |
 | posle       | 119.203 | 0.00838903 |
 | dve         | 117.117 | 0.00853847 |
 | korišćenje  | 114.489 | 0.00873448 |
-| decu        | 112.382 | 0.0088982  |
-| mesto       | 111.11  | 0.00900005 |
+| decu        | 112.382 |  0.0088982 |
+| mesto       |  111.11 | 0.00900005 |
 | čoveka      | 110.924 | 0.00901519 |
 | zahteva     | 109.001 | 0.00917422 |
 | dela        | 108.295 | 0.00923403 |
@@ -659,11 +659,11 @@ On Twitter dataset the performance is simmilar, albeit less pronounced than that
 ![](images/14_metrics_twitter.png)
 
 
-This time the repeated experiments proved to be far uglier, less self-consistant and far less continuous as the previous batch. But we clearly see there is some optimal value somewhere between 1e2 and 1e3 features per language pair. The experiments will be repeated in the future.
+This time the repeated experiments proved to be far uglier, less self-consistant and far less continuous as the previous batch. But we clearly see there is some optimal value somewhere between 1e2 and 1e3 features per language pair. ~~The experiments will be repeated in the future.~~ New plots are nicer. They clearly show the optimal number of params is lower for Twitter dataset than for SETimes, probably owing to the different writing styles.
 
 
 # Addendum 2022-01-04T09:04:04
-I rewrote the code for optimization on SVC. Even with only 10 features per language pair the SVC training takes a long time, and if the results won't be significantly better I suggest we stick with NB. As of right now the training for mere 10 features per language is at ~~11~~ ~~30~~ ~~66~~ ~~73~~  ~~129~~ 167 minutes.
+I rewrote the code for optimization on SVC. Even with only 10 features per language pair the SVC training takes a long time, and if the results won't be significantly better I suggest we stick with NB. As of right now the training for mere 10 features per language is at ~~11~~ ~~30~~ ~~66~~ ~~73~~  ~~129~~ ~~167~~ 205 minutes.
 
 
 I researched a bit and found that the temporal complexity of SVC is  `O(n_samples^2 * n_features) `, meaning that in our case we do have a linear increase with the number of features, but the majority contribution will be due to the number of samples.
@@ -675,4 +675,26 @@ After the first scan through `N` space was completed, I checked the preliminary 
 
 As far as time is concearned, the overhead due to count vectorizer initiation is now barely visible. The vast majority of time is dedicated to training. Prediction times are simmilar to Naive Bayes.
 
-The scan was repeated again in approximately the same range. The results are pretty self-consistant.
+The scan was repeated again in approximately the same range. The results are pretty self-consistant. The optimal `N` seems to be 125.
+
+
+![](images/16_metrics_LinearSVC_SETimes.png)
+
+![](images/16_time_LinearSVC_SETimes.png)
+
+On twitter dataset, however, the (Linear) SVC performs _better_ than Naive Bayes:
+
+![](images/16_metrics_twitter.png)
+
+Evaluations on twitter dataset also show that the optimal `N` parameter is closer to the one we estimated for Naive Bayes. 
+
+# Summary:
+
+Let's sum up our metrics in a concise manner in a table:
+
+| clf         | dataset | optimal `N` | max acc |
+| ----------- | ------- | ----------- | ------- |
+| Naive Bayes | SETimes | 517         | 0.9     |
+| Naive Bayes | Twitter | 117         | 0.85    |
+| Linear SVC  | SETimes | 125         | 0.75    |
+| Linear SVC  | Twitter | 125         | 0.91    |
