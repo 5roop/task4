@@ -660,3 +660,9 @@ On Twitter dataset the performance is simmilar, albeit less pronounced than that
 
 
 This time the repeated experiments proved to be far uglier, less self-consistant and far less continuous as the previous batch. But we clearly see there is some optimal value somewhere between 1e2 and 1e3 features per language pair.
+
+# Addendum 2022-01-04T09:04:04
+I rewrote the code for optimization on SVC. Even with only 10 features per language pair the SVC training takes a long time, and if the results won't be significantly better I suggest we stick with NB. As of right now the training for mere 10 features per language is at ~~11~~ ~~30~~ 66 minutes.
+
+
+I researched a bit and found that the temporal complexity of SVC is  `O(n_samples^2 * n_features) `, meaning that in our case we do have a linear increase with the number of features, but the majority contribution will be due to the number of samples.
