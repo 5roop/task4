@@ -698,3 +698,11 @@ Let's sum up our metrics in a concise manner in a table:
 | Naive Bayes | Twitter | 117         | 0.85    |
 | Linear SVC  | SETimes | 125         | 0.75    |
 | Linear SVC  | Twitter | 125         | 0.91    |
+
+
+
+
+# Addendum 2022-01-05T10:07:27
+
+I tried optimizing hyperparameters for the part 15: training a plain SVC on SETimes. I never obtained performance remotely comparable to LinearSVC ( clasifier trained in less than a few minutes).
+
