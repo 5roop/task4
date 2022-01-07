@@ -94,6 +94,7 @@ def get_N_tokens(N=5000, path="/home/peterr/macocu/taskB/task4/toy_tokens.csv") 
         set: set of most important N tokens for every language combination.
     """
     import pandas as pd
+    import numpy as np
     df = pd.read_csv(path, index_col=0)
     NUM_FEATS = N
 
