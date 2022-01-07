@@ -58,6 +58,11 @@ chars_to_remove = {
 
 }
 
+
+raw_dir = "/home/peterr/macocu/taskB/data/raw"
+interim_dir = "/home/peterr/macocu/taskB/data/interim"
+final_dir = "/home/peterr/macocu/taskB/data/final"
+
 def remove_chars(input_text: str, chars_to_remove: Set[str] = chars_to_remove) -> str:
     for c in chars_to_remove:
         input_text = input_text.replace(c, "")
@@ -159,3 +164,23 @@ def read_and_split_file(path: str) -> List[str]:
         chunk += " ".join(words)
     return texts
 
+def load_SET_dataset():
+    SETimes = list()
+    for split in ["train", "test", "dev"]:
+        with open(os.path.join(final_dir, f"{split}.fasttxt"), "r") as f:
+            lines = f.readlines()
+            SETimes.extend(lines)
+
+    p = parse.compile("__label__{lang} {text}")
+    langs = list()
+    texts = list()
+
+    for line in SETimes:
+        results = p.parse(line)
+        if not results:
+            logging.error(f"Error parsing line {line}")
+            continue
+        langs.append(results["lang"])
+        texts.append(results["text"])
+
+    eval_df = pd.DataFrame(data={"text": texts, "labels": langs})
