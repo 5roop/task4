@@ -730,3 +730,23 @@ I thought that there was something buggy in my procedure, but alas, after invest
   1000000 srwac_tail_pp
 ```
 The distribution simply means that we have much shorter documents in montenegrin, yielding more instances. We can therefore predict also that the coverage will be lower for montenegrin, since the average document length will be lower.
+
+
+
+
+# Addendum 2022-01-07T12:24:32
+
+First results are in. 
+
+Interestingly the optimal number of tokens per language seems to be higher than before: initial estimate is around 1000 tokens per language pair.
+
+The in-domain accuracy is the lowest recorded, at best we achieve 0.65 accuracy. 
+
+
+![](images/17_in_domain_coverage.png)
+
+Coverage is increasing with richer vocabularies. I measure it as the average number of distinct vocabulary tokens that are found in the instance string. It seems reasonable that the number of tokens found is increasing with longer vocabularies.
+
+What could be the issue with poor in-domain results?
+* Training split was smaller, but only for 10%
+* 
