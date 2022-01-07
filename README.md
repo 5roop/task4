@@ -738,9 +738,9 @@ The distribution simply means that we have much shorter documents in montenegrin
 
 First results are in. 
 
-Interestingly the optimal number of tokens per language seems to be higher than before: initial estimate is around 1000 tokens per language pair.
+Interestingly the optimal number of tokens per language seems to be higher than before: initial estimate is around ~~1000~~ 1172 tokens per language pair.
 
-The in-domain accuracy is the lowest recorded, at best we achieve 0.65 accuracy. 
+The in-domain accuracy is the lowest recorded, at best we achieve 0.66 accuracy. 
 
 
 ![](images/17_in_domain_coverage.png)
@@ -749,4 +749,8 @@ Coverage is increasing with richer vocabularies. I measure it as the average num
 
 What could be the issue with poor in-domain results?
 * Training split was smaller, but only for 10%
-* 
+* Poorly performing montenegrin is overly-represented, which could explain lower performance
+
+I also performed LinearSVC classifier training on the same dataset. The results were better, but trends indicate the optimum was not reached before running out of memory:
+
+![](images/17_in_domain_coverage_LinSVC.png)
