@@ -716,5 +716,17 @@ We are to prepare a separate test dataset with corpus data as well. We can take 
 
 We also have to evaluate coverage of the vocabulary -> percentage of documents that are not covered by any feature.
 
+After investigating the splitting procedure, i found this disconcerting distribution of labels:
 
+![](images/17_composition.png)
 
+I thought that there was something buggy in my procedure, but alas, after investigating, I found that the files are split correctly, meaning that the line count of the files looks like this:
+
+```bash
+(base) 2022-01-07 T 10:47:48~/macocu/taskB/data/interim$ wc -l *tail_pp
+  1000000 bswac_tail_pp
+  1000000 cnrwac_tail_pp
+  1000000 hrwac_tail_pp
+  1000000 srwac_tail_pp
+```
+The distribution simply means that we have much shorter documents in montenegrin, yielding more instances. We can therefore predict also that the coverage will be lower for montenegrin, since the average document length will be lower.
