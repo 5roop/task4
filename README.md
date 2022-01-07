@@ -706,3 +706,15 @@ Let's sum up our metrics in a concise manner in a table:
 
 I tried optimizing hyperparameters for the part 15: training a plain SVC on SETimes. I never obtained performance remotely comparable to LinearSVC ( clasifier trained in less than a few minutes).
 
+
+
+# Chat with Nikola 2022-01-07T08:01:58
+
+
+We are to prepare a separate test dataset with corpus data as well. We can take 10% of the vocabulary/classifier data and evaluate that.
+
+
+We also have to evaluate coverage of the vocabulary -> percentage of documents that are not covered by any feature.
+
+
+
