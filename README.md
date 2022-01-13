@@ -754,3 +754,17 @@ What could be the issue with poor in-domain results?
 I also performed LinearSVC classifier training on the same dataset. The results were better, but trends indicate the optimum was not reached before running out of memory:
 
 ![](images/17_in_domain_coverage_LinSVC.png)
+
+
+# Summary as of 2022-01-13T09:50:02
+
+
+
+| clf         | dataset   | optimal `N` | max acc |
+| ----------- | --------- | ----------- | ------- |
+| Naive Bayes | SETimes   | 517         | 0.9     |
+| Naive Bayes | Twitter   | 117         | 0.85    |
+| Naive Bayes | in-domain | 727         | 0.66    |
+| Linear SVC  | SETimes   | 125         | 0.75    |
+| Linear SVC  | Twitter   | 125         | 0.91    |
+| Linear SVC  | in-domain | >4893       | 0.77    |
