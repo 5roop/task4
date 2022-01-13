@@ -58,7 +58,7 @@ chars_to_remove = {
 
 }
 
-
+LABELS = ["hr", "bs", "sr", "me"]
 raw_dir = "/home/peterr/macocu/taskB/data/raw"
 interim_dir = "/home/peterr/macocu/taskB/data/interim"
 final_dir = "/home/peterr/macocu/taskB/data/final"
