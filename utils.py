@@ -63,7 +63,7 @@ raw_dir = "/home/peterr/macocu/taskB/data/raw"
 interim_dir = "/home/peterr/macocu/taskB/data/interim"
 final_dir = "/home/peterr/macocu/taskB/data/final"
 
-def remove_chars(input_text: str, chars_to_remove: Set[str] = chars_to_remove) -> str:
+def remove_chars(input_text: str, chars_to_remove: Set[str] = chars_to_remove) -> Set[str]:
     for c in chars_to_remove:
         input_text = input_text.replace(c, "")
     return input_text
