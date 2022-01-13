@@ -96,8 +96,18 @@ def get_N_tokens(N=5000, path="/home/peterr/macocu/taskB/task4/toy_tokens.csv") 
     import pandas as pd
     import numpy as np
     df = pd.read_csv(path, index_col=0)
+    
+    df = df.iloc[~df.index.isna(), :]
+    def filter_token(token:str)-> bool:
+        token = token.replace(" ", "")
+        if len(token) < 3:
+            return False
+        return any([vowel in token for vowel in "aeiou"])
+    df["keep"] = df.index.copy()
+    df["keep"] = df.keep.apply(filter_token)
+    df = df.loc[df.keep, :]
+    df.drop(columns=["keep"], inplace=True)
     NUM_FEATS = N
-
     for column in df.columns:
         new_column_name = column + "_f"
         corpus_size = df[column].sum()
@@ -125,9 +135,7 @@ def get_N_tokens(N=5000, path="/home/peterr/macocu/taskB/task4/toy_tokens.csv") 
 
     combos = ['HR_SR', 'SR_HR', 'HR_CNR', 'CNR_HR', 'HR_BS', 'BS_HR',
               'BS_SR', 'SR_BS', 'BS_CNR', 'CNR_BS', 'CNR_SR', 'SR_CNR']
-
     important_features = set()
-
     for lang_comb in combos:
         s = df[lang_comb].sort_values(ascending=False)
         current_features = s.index[:NUM_FEATS].values
@@ -137,6 +145,7 @@ def get_N_tokens(N=5000, path="/home/peterr/macocu/taskB/task4/toy_tokens.csv") 
     except KeyError:
         pass
     return important_features
+
 
 
 def read_and_split_file(path: str) -> List[str]:
