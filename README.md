@@ -767,4 +767,19 @@ I also performed LinearSVC classifier training on the same dataset. The results 
 | Naive Bayes | in-domain | 727         | 0.66    |
 | Linear SVC  | SETimes   | 125         | 0.75    |
 | Linear SVC  | Twitter   | 125         | 0.91    |
-| Linear SVC  | in-domain | >4893       | 0.77    |
+| Linear SVC  | in-domain | > 4893       | 0.77    |
+
+
+# Meeting notes 2022-01-13T10:07:42
+
+Ideas for correcting the in-domain dataset:
+* Compile per language token importances for Nikola. N=5000.
+* ~~Filter out the shortest ME documents so that we get appropriately sized ME split~~
+* Alternatively: Concatenate shortest documents in ME domain **with neighbours** until we get a comparable ME split.
+* Implement boolean-coverage calculation: find the documents for which no token in vocabulary is present in the document text. See example below. Agregated across eval split should be percentage of instances that are not covered.
+* Log the per language coverage (perhaps plot it?)
+
+```
+boolean_covegerage(instance) -> bool:
+  """Return True if there are at least 3 vocab tokens in instance text """
+```
