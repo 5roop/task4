@@ -773,7 +773,7 @@ I also performed LinearSVC classifier training on the same dataset. The results 
 # Meeting notes 2022-01-13T10:07:42
 
 Ideas for correcting the in-domain dataset:
-* Compile per language token importances for Nikola. N=5000.
+* ✓ Compile per language token importances for Nikola. N=5000.
 * ~~Filter out the shortest ME documents so that we get appropriately sized ME split~~
 * Alternatively: Concatenate shortest documents in ME domain **with neighbours** until we get a comparable ME split.
 * Implement boolean-coverage calculation: find the documents for which no token in vocabulary is present in the document text. See example below. Agregated across eval split should be percentage of instances that are not covered.
@@ -783,3 +783,13 @@ Ideas for correcting the in-domain dataset:
 boolean_covegerage(instance) -> bool:
   """Return True if there are at least 3 vocab tokens in instance text """
 ```
+
+## Correcting the ME subset
+
+Before correcting let's inspect original composition of the per-language dataset:
+
+![](images/19_original_word_count_distribution.png)
+
+We can see we have an unusual count of instances in ME at around 20 words. As agreed these will be joined with their neighbours. This will be done in `pandas`.
+
+The new ME webcrawl file is `data/interim/cnrwac_tail_pp_corrected`.
