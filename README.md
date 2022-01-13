@@ -775,7 +775,7 @@ I also performed LinearSVC classifier training on the same dataset. The results 
 Ideas for correcting the in-domain dataset:
 * ✓ Compile per language token importances for Nikola. N=5000.
 * ~~Filter out the shortest ME documents so that we get appropriately sized ME split~~
-* Alternatively: Concatenate shortest documents in ME domain **with neighbours** until we get a comparable ME split.
+* ✓ Alternatively: Concatenate shortest documents in ME domain **with neighbours** until we get a comparable ME split.
 * Implement boolean-coverage calculation: find the documents for which no token in vocabulary is present in the document text. See example below. Agregated across eval split should be percentage of instances that are not covered.
 * Log the per language coverage (perhaps plot it?)
 
