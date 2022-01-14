@@ -793,3 +793,15 @@ Before correcting let's inspect original composition of the per-language dataset
 We can see we have an unusual count of instances in ME at around 20 words. As agreed these will be joined with their neighbours. This will be done in `pandas`.
 
 The new ME webcrawl file is `data/interim/cnrwac_tail_pp_corrected`.
+
+## Repeating the in-domain classification
+
+With new ME split I repeated the in-domain classification evaluation. Below is a plot of clf metrics for Naive Bayes:
+
+![](images/20_in_domain_coverage_NB.png)
+
+And for LinearSVC:
+
+![](images/20_in_domain_coverage_LinSVC.png)
+
+The results are quantitatively simmilar to what we saw before.
