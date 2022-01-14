@@ -805,3 +805,9 @@ And for LinearSVC:
 ![](images/20_in_domain_coverage_LinSVC.png)
 
 The results are quantitatively simmilar to what we saw before.
+
+# Addendum 2022-01-14T11:21:29
+
+A new correction on the ME web data has been performed. The unusual peak at 22 words in the distribution has been explored and a boilerplate sentence was ruled to be the reason behind it. These instances were deleted. Furthermore, the shortest documents were joined with their neighbours so that the distribution starts at 20 words, to approximately match the rest of the distributions.
+
+The new ME webcrawl file is `data/interim/cnrwac_tail_pp_corrected_2`.
