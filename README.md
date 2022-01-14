@@ -804,7 +804,7 @@ And for LinearSVC:
 
 ![](images/20_in_domain_coverage_LinSVC.png)
 
-The results are quantitatively simmilar to what we saw before.
+The results are quantitatively similar to what we saw before.
 
 # Addendum 2022-01-14T11:21:29
 
