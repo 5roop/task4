@@ -812,4 +812,4 @@ A new correction on the ME web data has been performed. The unusual peak at 22 w
 
 The new ME webcrawl file is `data/interim/cnrwac_tail_pp_corrected_2`.
 
-I continued with rerunning the experiments with the newest corrections. The 
+I continued with rerunning the experiments with the newest corrections. The plots above will be replaced with the new version.
