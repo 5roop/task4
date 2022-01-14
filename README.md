@@ -776,7 +776,7 @@ Ideas for correcting the in-domain dataset:
 * ✓ Compile per language token importances for Nikola. N=5000.
 * ~~Filter out the shortest ME documents so that we get appropriately sized ME split~~
 * ✓ Alternatively: Concatenate shortest documents in ME domain **with neighbours** until we get a comparable ME split.
-* Implement boolean-coverage calculation: find the documents for which no token in vocabulary is present in the document text. See example below. Agregated across eval split should be percentage of instances that are not covered.
+* ✓ Implement boolean-coverage calculation: find the documents for which no token in vocabulary is present in the document text. See example below. Agregated across eval split should be percentage of instances that are not covered.
 * Log the per language coverage (perhaps plot it?)
 
 ```
@@ -811,3 +811,5 @@ The results are quantitatively simmilar to what we saw before.
 A new correction on the ME web data has been performed. The unusual peak at 22 words in the distribution has been explored and a boilerplate sentence was ruled to be the reason behind it. These instances were deleted. Furthermore, the shortest documents were joined with their neighbours so that the distribution starts at 20 words, to approximately match the rest of the distributions.
 
 The new ME webcrawl file is `data/interim/cnrwac_tail_pp_corrected_2`.
+
+I continued with rerunning the experiments with the newest corrections. The 
