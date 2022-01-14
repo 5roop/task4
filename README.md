@@ -815,3 +815,9 @@ The new ME webcrawl file is `data/interim/cnrwac_tail_pp_corrected_2`.
 I continued with rerunning the experiments with the newest corrections. The plots above will be replaced with the new version.
 
 I started working on per-language coverage calculation and evaluation. I expect all metrics will follow the same pattern as the language-agnostic metric did. They should in any case be monotonically decreasing with `N`, because the percentage of uncovered instances can not increase if we increase `N`. 
+
+The first results, obtained with NB classifier, confirmed my hypothesis:
+
+![](images/20_in_domain_coverage_NB_add_per_lang_cov.png)
+
+The coverage will not change if we chose a diffent classifier, so this experiment was not repeated for Linear SVC. As we can see Croatian and Bosnian datasets are less covered, while Montenegrin and Serbian behave similarly and more nicely than the rest of the languages.
