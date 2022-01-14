@@ -813,3 +813,5 @@ A new correction on the ME web data has been performed. The unusual peak at 22 w
 The new ME webcrawl file is `data/interim/cnrwac_tail_pp_corrected_2`.
 
 I continued with rerunning the experiments with the newest corrections. The plots above will be replaced with the new version.
+
+I started working on per-language coverage calculation and evaluation. I expect all metrics will follow the same pattern as the language-agnostic metric did. They should in any case be monotonically decreasing with `N`, because the percentage of uncovered instances can not increase if we increase `N`. 
