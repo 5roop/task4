@@ -767,7 +767,7 @@ I also performed LinearSVC classifier training on the same dataset. The results 
 | Naive Bayes | in-domain | 727         | 0.66    |
 | Linear SVC  | SETimes   | 125         | 0.75    |
 | Linear SVC  | Twitter   | 125         | 0.91    |
-| Linear SVC  | in-domain | > 4893       | 0.77    |
+| Linear SVC  | in-domain | > 4893       | 0.77   |
 
 
 # Meeting notes 2022-01-13T10:07:42
@@ -821,3 +821,8 @@ The first results, obtained with NB classifier, confirmed my hypothesis:
 ![](images/20_in_domain_coverage_NB_add_per_lang_cov.png)
 
 The coverage will not change if we chose a diffent classifier, so this experiment was not repeated for Linear SVC. As we can see Croatian and Bosnian datasets are less covered, while Montenegrin and Serbian behave similarly and more nicely than the rest of the languages.
+
+# Meeting notes 2022-01-14T15:07:31
+
+* Provide Nikola with text, y_true and y_pred for the entire web evaluation dataset at N=800. Remove excess whitespace.
+* Future steps: DS are to be published (not processed) and a paper is to be written about this.
