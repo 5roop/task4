@@ -36,7 +36,9 @@ urls_hr = [
 "https://dalmatinskiportal.hr/sadrzaj/rss/vijesti.xml",
 "http://www.057info.hr/rss/info.xml",
 "https://www.dalmacijanews.hr/rss",
-"https://www.zagreb.info/feed/"]
+"https://www.zagreb.info/feed/",
+"http://www.24sata.hr/feeds/aktualno.xml",
+]
 urls_me = [
     "https://rss.portalanalitika.me",
 "https://www.vijesti.me/rss",
@@ -92,6 +94,9 @@ urls_sr = [
 "https://www.standard.rs/feed/",
 "https://www.istinomer.rs/feed/",
 "https://beta.rs/betarss",
+"https://time.rs/rss/all",
+"https://www.blic.rs/rss/danasnje-vesti",
+"https://www.blic.rs/rss/Vesti",
 ]
 
 top_level_dict = {
