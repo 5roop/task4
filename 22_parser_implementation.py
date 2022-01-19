@@ -1,13 +1,15 @@
-#%%
+# %%
 
+import os
+from typing import List
+from trafilatura import fetch_url, extract
+import pandas as pd
+import feedparser
 import time
 import logging
 
 logging.basicConfig(format='%(asctime)s - %(message)s',
                     level=logging.WARNING)
-import feedparser
-import pandas as pd
-from trafilatura import fetch_url, extract
 
 # %%
 urls_hr = [
