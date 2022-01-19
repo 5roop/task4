@@ -826,3 +826,34 @@ The coverage will not change if we chose a diffent classifier, so this experimen
 
 * Provide Nikola with text, y_true and y_pred for the entire web evaluation dataset at N=800. Remove excess whitespace.
 * Future steps: DS are to be published (not processed) and a paper is to be written about this.
+
+# Notes on DS publishing and paper concepts
+
+Datasets publishing:
+* We already have train/dev/test split for SETimes in fasttext format
+* For Twitter dataset we can stratify by users or by individual tweets (the latter being more fair, but also more prone to errors, since not all tweets from a user are in the labelled language)
+* Publishing web crawl data: is it already public? If not: filter ME orphans (22-word sentence anomalies) on original data, join languages, stratify by language.
+* Method of publishing: HF (more visible, more overhead), CLARIN repo (less visible, easier)
+
+
+Paper:
+* I'd like to prepare a repo showcasing all the steps: loading the dataset, preprocessing, training, evaluating... Can we omit fasttext classification? 
+
+
+# Meeting notes 2022-01-18T10:29:15
+
+Nikola sent RSS feeds for BCMS languages. This will be the third dataset to benchmark on.
+
+* Implement an RSS parser that downloads the news linked in the rss every day or so and store it somewhere.
+* DS Will be published on CLARIN
+
+
+
+# Parser progress:
+
+I notice that  `trafilatura` also requires JustText under the hood. I will first study the parsing of a sample 
+
+
+# Addendum 2022-01-19T11:26:29
+
+The first version of parser is implemented. As of now I get 
