@@ -856,4 +856,4 @@ I notice that  `trafilatura` also requires JustText under the hood. I will first
 
 # Addendum 2022-01-19T11:26:29
 
-The first version of parser is implemented. As of now I get 
+The first version of parser is implemented. As of now I get results, but some filtering will be necessary to prevent duplication of items. This will be the next step. It will be run a few times, and hopefully we will see some pathology in the logs before implementing a crontab to run it periodically.
