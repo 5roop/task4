@@ -4,7 +4,7 @@ import time
 import logging
 
 logging.basicConfig(format='%(asctime)s - %(message)s',
-                    level=logging.INFO)
+                    level=logging.WARNING)
 import feedparser
 import pandas as pd
 from trafilatura import fetch_url, extract
