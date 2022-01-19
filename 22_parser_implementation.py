@@ -127,6 +127,8 @@ for lang, urls in top_level_dict.items():
             continue
         for link in links:
             text = get_text_from_link(link)
+            if not text:
+                continue
             curtime  = time.strftime("%Y-%m-%dT%T%z")
 
             itemdict = {
