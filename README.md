@@ -859,3 +859,16 @@ I notice that  `trafilatura` also requires JustText under the hood. I will first
 The first version of parser is implemented. As of now I get results, but some filtering will be necessary to prevent duplication of items. This will be the next step. It will be run a few times, and hopefully we will see some pathology in the logs before implementing a crontab to run it periodically.
 
 At this time the crawl takes about 15 minutes.
+
+I was worried that I introduced some bugs in my code, because not all the hashes were unique. It turned out that this is quite OK, because responses from certain sites were duplicates, e.g.:
+
+```
+'Portal Analitika Žao nam je ali naš sajt zahtijeva omogućen JavaScript u Vašem internet pregledaču. Omogućite podršku u panelu sa podešavanjima. Hvala, Portal Analitika. We are sorry, but our website requires enabled JavaScript in your browser. Please enable JavaScript support in your browwser preferences. Thank you, Portal Analitika.'
+```
+
+Deduplication will be performed on every run of the crawling, but also before joining the current run with the old results.
+
+
+I also noticed that for some URLs we get some problems reported. For some resources the URL was not a proper rss feed, but the feed was linked on the page.
+
+For some URLs the RSS feed was not as easy to find (for instance https://www.rts.rs/page/rss/ci.html), and for some there were no entries in the feed or the feed returned a 403 response.
