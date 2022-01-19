@@ -1,3 +1,5 @@
+#!/home/peterr/anaconda3/bin/python
+
 # %%
 
 import os
