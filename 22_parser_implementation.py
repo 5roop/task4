@@ -9,96 +9,96 @@ import time
 import logging
 
 logging.basicConfig(format='%(asctime)s - %(message)s',
-                    level=logging.WARNING)
+                    level=logging.INFO)
 
 # %%
 urls_hr = [
-"https://www.index.hr/rss/info",
-"https://www.jutarnji.hr/feed",
-"https://www.24sata.hr/flatpages/rss",
-"https://www.vecernji.hr/feed",
-"https://net.hr/feed",
-"https://dnevnik.hr/rss",
-"https://www.tportal.hr/rss",
-"https://www.rtl.hr/feed/",
-"https://slobodnadalmacija.hr/feed/",
-"https://narod.hr/feed",
-"https://www.lika-online.com/feed/",
-"https://www.telegram.hr/feed",
-"https://www.dnevno.hr/feed",
-"http://www.100posto.hr/rss",
-"https://www.novilist.hr/feed/",
-"https://o-nama.hrt.hr/rss-i-mobilne-aplikacije/rss-328191",
-"https://express.24sata.hr/rss/",
-"https://hr.n1info.com/feed",
-"https://direktno.hr/rss/",
-"https://www.monitor.hr/feed/rss/",
-"https://klik.hr/rss",
-"http://www.glas-slavonije.hr/Rss",
-"https://dalmatinskiportal.hr/sadrzaj/rss/vijesti.xml",
-"http://www.057info.hr/rss/info.xml",
-"https://www.dalmacijanews.hr/rss",
-"https://www.zagreb.info/feed/",
-"http://www.24sata.hr/feeds/aktualno.xml",
+    "https://www.index.hr/rss/info",
+    "https://www.jutarnji.hr/feed",
+    "https://www.24sata.hr/flatpages/rss",
+    "https://www.vecernji.hr/feed",
+    "https://net.hr/feed",
+    "https://dnevnik.hr/rss",
+    "https://www.tportal.hr/rss",
+    "https://www.rtl.hr/feed/",
+    "https://slobodnadalmacija.hr/feed/",
+    "https://narod.hr/feed",
+    "https://www.lika-online.com/feed/",
+    "https://www.telegram.hr/feed",
+    "https://www.dnevno.hr/feed",
+    "http://www.100posto.hr/rss",
+    "https://www.novilist.hr/feed/",
+    "https://o-nama.hrt.hr/rss-i-mobilne-aplikacije/rss-328191",
+    "https://express.24sata.hr/rss/",
+    "https://hr.n1info.com/feed",
+    "https://direktno.hr/rss/",
+    "https://www.monitor.hr/feed/rss/",
+    "https://klik.hr/rss",
+    "http://www.glas-slavonije.hr/Rss",
+    "https://dalmatinskiportal.hr/sadrzaj/rss/vijesti.xml",
+    "http://www.057info.hr/rss/info.xml",
+    "https://www.dalmacijanews.hr/rss",
+    "https://www.zagreb.info/feed/",
+    "http://www.24sata.hr/feeds/aktualno.xml",
 ]
 urls_me = [
     "https://rss.portalanalitika.me",
-"https://www.vijesti.me/rss",
-"https://www.cdm.me/feed/",
-"http://barinfo.me/feed/",
-"https://crna.gora.me/feed/",
+    "https://www.vijesti.me/rss",
+    "https://www.cdm.me/feed/",
+    "http://barinfo.me/feed/",
+    "https://crna.gora.me/feed/",
 ]
 urls_bs = [
     "https://avaz.ba/rss",
-"https://www.nezavisne.com/rss",
-"https://www.oslobodjenje.ba/rss",
-"https://www.bljesak.info/rss",
-"https://vijesti.ba/rss/svevijesti",
-"https://www.slobodna-bosna.ba/rss/",
-"https://www.haber.ba/feed",
-"https://www.doznajemo.com?format=rss",
-"https://www.poskok.info/feed/",
-"https://www.vecernji.ba/rss",
-"https://magazin.ba/feed",
-"https://www.zenicablog.com/feed/",
-"http://tip.ba/feed/",
-"https://www.krajina.ba/feed/",
-"https://zurnal.info/rss",
-"https://www.bh-index.info/feed/",
-"https://dnevni.ba/feed/",
-"https://pogled.ba/rss/naslovna",
-"https://fena.ba/rss",
-"http://mojusk.ba/feed/",
-"https://krupljani.ba/feed",
-"https://www.livno-online.com/?format=feed&type=rss",
+    "https://www.nezavisne.com/rss",
+    "https://www.oslobodjenje.ba/rss",
+    "https://www.bljesak.info/rss",
+    "https://vijesti.ba/rss/svevijesti",
+    "https://www.slobodna-bosna.ba/rss/",
+    "https://www.haber.ba/feed",
+    "https://www.doznajemo.com?format=rss",
+    "https://www.poskok.info/feed/",
+    "https://www.vecernji.ba/rss",
+    "https://magazin.ba/feed",
+    "https://www.zenicablog.com/feed/",
+    "http://tip.ba/feed/",
+    "https://www.krajina.ba/feed/",
+    "https://zurnal.info/rss",
+    "https://www.bh-index.info/feed/",
+    "https://dnevni.ba/feed/",
+    "https://pogled.ba/rss/naslovna",
+    "https://fena.ba/rss",
+    "http://mojusk.ba/feed/",
+    "https://krupljani.ba/feed",
+    "https://www.livno-online.com/?format=feed&type=rss",
 ]
 urls_sr = [
-"https://www.blic.rs/rss",
-"https://www.kurir.rs/rss",
-"https://www.rts.rs/page/rss/ci.html",
-"https://www.telegraf.rs/rss",
-"https://www.novosti.rs/rss",
-"https://informer.rs/rss",
-"http://www.politika.rs/rss/",
-"https://naslovi.net/rss/",
-"https://www.vesti-online.com/feed/",
-"https://www.danas.rs/feed/",
-"http://tanjug.rs/Rsslat.aspx",
-"https://www.njuz.net/rss",
-"https://feeds.feedburner.com/juznevesti",
-"http://www.nspm.rs/component/option,com_bca-rss-syndicator/feed_id,1/",
-"https://pescanik.net/feed",
-"https://www.vesti.rs/rss.php",
-"https://www.vreme.com/rss/novosti-rss.xml",
-"https://www.dnevnik.rs/rss.xml",
-"https://24online.rs/feed/",
-"https://time.rs/rss/rsspage",
-"https://www.standard.rs/feed/",
-"https://www.istinomer.rs/feed/",
-"https://beta.rs/betarss",
-"https://time.rs/rss/all",
-"https://www.blic.rs/rss/danasnje-vesti",
-"https://www.blic.rs/rss/Vesti",
+    "https://www.blic.rs/rss",
+    "https://www.kurir.rs/rss",
+    "https://www.rts.rs/page/rss/ci.html",
+    "https://www.telegraf.rs/rss",
+    "https://www.novosti.rs/rss",
+    "https://informer.rs/rss",
+    "http://www.politika.rs/rss/",
+    "https://naslovi.net/rss/",
+    "https://www.vesti-online.com/feed/",
+    "https://www.danas.rs/feed/",
+    "http://tanjug.rs/Rsslat.aspx",
+    "https://www.njuz.net/rss",
+    "https://feeds.feedburner.com/juznevesti",
+    "http://www.nspm.rs/component/option,com_bca-rss-syndicator/feed_id,1/",
+    "https://pescanik.net/feed",
+    "https://www.vesti.rs/rss.php",
+    "https://www.vreme.com/rss/novosti-rss.xml",
+    "https://www.dnevnik.rs/rss.xml",
+    "https://24online.rs/feed/",
+    "https://time.rs/rss/rsspage",
+    "https://www.standard.rs/feed/",
+    "https://www.istinomer.rs/feed/",
+    "https://beta.rs/betarss",
+    "https://time.rs/rss/all",
+    "https://www.blic.rs/rss/danasnje-vesti",
+    "https://www.blic.rs/rss/Vesti",
 ]
 
 top_level_dict = {
@@ -122,6 +122,7 @@ def get_text_from_link(url: str) -> str:
     text = extract(downloaded)
     return text
 
+# Main loop: crawling
 
 current_items = list()
 for lang, urls in top_level_dict.items():
@@ -142,10 +143,14 @@ for lang, urls in top_level_dict.items():
                 "rss_link": url,
                 "crawl_time": curtime,
                 "text_hash": hash(text)
-                }
+            }
             current_items.append(itemdict)
 
 # %%
+
+# Saving the results:
+
+
 crawl_dir = "/home/peterr/macocu/taskB/task4/"
 crawl_file = "22_webcrawl.csv"
 
@@ -154,6 +159,7 @@ current_size_start = current_df.shape[0]
 
 # Filter current crawl results:
 current_df = current_df.drop_duplicates(subset="text", keep="first")
+
 current_size_after_dedup = current_df.shape[0]
 logging.info(
     f"Local deduplication deleted {current_size_start - current_size_after_dedup} items.")
