@@ -108,18 +108,20 @@ top_level_dict = {
     "me": urls_me,
 }
 
-from typing import List
-def get_links_from_rss(url:str) -> List[str]:
+
+def get_links_from_rss(url: str) -> List[str]:
     feed = feedparser.parse(url)
     if not feed.entries:
         logging.warning(f"We have no entries at this url: {url:s}")
         return None
     return [entry.get("link") for entry in feed.entries]
 
-def get_text_from_link(url:str) -> str:
+
+def get_text_from_link(url: str) -> str:
     downloaded = fetch_url(url)
     text = extract(downloaded)
     return text
+
 
 current_items = list()
 for lang, urls in top_level_dict.items():
