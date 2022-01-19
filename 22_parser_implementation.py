@@ -167,9 +167,7 @@ else:
     
     merged = pd.concat([old_df, current_df], ignore_index=True)
     merged.to_csv(
-        os.path.join(
-            crawl_dir, crawl_file
-            ),
+        os.path.join(crawl_dir, crawl_file),
         index=False
 
     )
