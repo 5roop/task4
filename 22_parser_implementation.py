@@ -133,10 +133,10 @@ for lang, urls in top_level_dict.items():
             text = get_text_from_link(link)
             if not text:
                 continue
-            curtime  = time.strftime("%Y-%m-%dT%T%z")
+            curtime = time.strftime("%Y-%m-%dT%T%z")
 
             itemdict = {
-                "language":lang,
+                "language": lang,
                 "text": text.replace("\n", " "),
                 "source": link,
                 "rss_link": url,
@@ -146,7 +146,6 @@ for lang, urls in top_level_dict.items():
             current_items.append(itemdict)
 
 # %%
-import os
 crawl_dir = "/home/peterr/macocu/taskB/task4/"
 crawl_file = "22_webcrawl.csv"
 
