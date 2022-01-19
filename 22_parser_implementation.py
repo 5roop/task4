@@ -133,7 +133,7 @@ for lang, urls in top_level_dict.items():
 
             itemdict = {
                 "language":lang,
-                "text": text,
+                "text": text.replace("\n", " "),
                 "source": link,
                 "rss_link": url,
                 "crawl_time": curtime,
