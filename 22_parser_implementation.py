@@ -150,12 +150,16 @@ crawl_dir = "/home/peterr/macocu/taskB/task4/"
 crawl_file = "22_webcrawl.csv"
 
 current_df = pd.DataFrame(data=current_items)
-
+current_size_start = current_df.shape[0]
 
 # Filter current crawl results:
 current_df = current_df.drop_duplicates(subset="text", keep="first")
-
+current_size_after_dedup = current_df.shape[0]
+logging.info(
+    f"Local deduplication deleted {current_size_start - current_size_after_dedup} items.")
 if crawl_file not in os.listdir(crawl_dir):
+    logging.debug(
+        "No existing data found, creating new one at {crawl_dir}/{crawl_file}.")
     current_df.to_csv(
         os.path.join(
             crawl_dir, crawl_file
@@ -163,6 +167,7 @@ if crawl_file not in os.listdir(crawl_dir):
         index=False
     )
 else:
+    logging.debug("Found existing data, merging.")
     old_df = pd.read_csv(
         os.path.join(
             crawl_dir, crawl_file
@@ -176,6 +181,5 @@ else:
         index=False
 
     )
-# %%
-
-# %%
+    logging.info(
+        f"Second deduplicaiton deleted {old_df.shape[0]+current_df.shape[0] - merged.shape[0]} instances.")
