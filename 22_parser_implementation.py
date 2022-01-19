@@ -1,12 +1,12 @@
 # %%
 
 import os
-from typing import List
-from trafilatura import fetch_url, extract
-import pandas as pd
-import feedparser
 import time
 import logging
+import feedparser
+import pandas as pd
+from typing import List
+from trafilatura import fetch_url, extract
 
 logging.basicConfig(format='%(asctime)s - %(message)s',
                     level=logging.INFO)
