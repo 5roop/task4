@@ -10,8 +10,12 @@ import pandas as pd
 from typing import List
 from trafilatura import fetch_url, extract
 
-logging.basicConfig(format='%(asctime)s - %(message)s',
-                    level=logging.INFO)
+logging.basicConfig(format='%(asctime)s  - %(message)s',
+                    level=logging.INFO, filename='/home/peterr/macocu/taskB/task4/22_crawl_log.txt', filemode='a')
+
+import warnings
+warnings.filterwarnings('ignore')
+
 
 # %% Resources and function definitions
 urls_hr = [
