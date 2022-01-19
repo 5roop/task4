@@ -46,6 +46,11 @@ urls_hr = [
     "https://www.dalmacijanews.hr/rss",
     "https://www.zagreb.info/feed/",
     "http://www.24sata.hr/feeds/aktualno.xml",
+    "https://feed.hrt.hr/vijesti/page.xml",
+    "https://feed.hrt.hr/sport/page.xml",
+    "https://feed.hrt.hr/magazin/page.xml",
+    "https://express.24sata.hr/feeds/placeholder-head/rss_feed",
+    "https://direktno.hr/rss/publish/latest/",
 ]
 urls_me = [
     "https://rss.portalanalitika.me",
@@ -77,6 +82,12 @@ urls_bs = [
     "http://mojusk.ba/feed/",
     "https://krupljani.ba/feed",
     "https://www.livno-online.com/?format=feed&type=rss",
+    "https://www.oslobodjenje.ba/feed",
+    "https://www.oslobodjenje.ba/feed/category/1",
+    "https://www.oslobodjenje.ba/feed/category/3",
+    "https://www.oslobodjenje.ba/feed/category/2",
+    "https://mojabih.oslobodjenje.ba/mb/feed/category/500000",
+    "https://www.slobodna-bosna.ba/rss/100/sve_vijesti.html",
 ]
 urls_sr = [
     "https://www.blic.rs/rss",
@@ -105,6 +116,8 @@ urls_sr = [
     "https://time.rs/rss/all",
     "https://www.blic.rs/rss/danasnje-vesti",
     "https://www.blic.rs/rss/Vesti",
+    "https://informer.rs/rss/danasnje-vesti",
+    "https://informer.rs/rss/vesti",
 ]
 
 top_level_dict = {
