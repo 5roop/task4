@@ -11,7 +11,7 @@ from trafilatura import fetch_url, extract
 logging.basicConfig(format='%(asctime)s - %(message)s',
                     level=logging.INFO)
 
-# %%
+# %% Resources and function definitions
 urls_hr = [
     "https://www.index.hr/rss/info",
     "https://www.jutarnji.hr/feed",
@@ -122,7 +122,7 @@ def get_text_from_link(url: str) -> str:
     text = extract(downloaded)
     return text
 
-# Main loop: crawling
+# %%  Main loop: crawling
 
 current_items = list()
 for lang, urls in top_level_dict.items():
@@ -146,9 +146,7 @@ for lang, urls in top_level_dict.items():
             }
             current_items.append(itemdict)
 
-# %%
-
-# Saving the results:
+# %% Saving the results:
 
 
 crawl_dir = "/home/peterr/macocu/taskB/task4/"
