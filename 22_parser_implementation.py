@@ -186,4 +186,4 @@ else:
 
     )
     logging.info(
-        f"Second deduplicaiton deleted {old_df.shape[0]+current_df.shape[0] - merged.shape[0]} instances.")
+        f"Second deduplication deleted {old_df.shape[0]+current_df.shape[0] - merged.shape[0]} instances.")
