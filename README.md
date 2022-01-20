@@ -882,3 +882,5 @@ At the time of writing the composition of the crawled dataset is as follows:
 ```
 {'hr': 4222, 'sr': 3836, 'bs': 1461, 'me': 206}
 ```
+
+The logs are an absolute mess, trafilatura logs some stuff in the logs that I can't get rid off, and the problem is impossible to replicate in the interactive session. I'm thinking of 
