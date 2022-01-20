@@ -872,3 +872,13 @@ Deduplication will be performed on every run of the crawling, but also before jo
 I also noticed that for some URLs we get some problems reported. For some resources the URL was not a proper rss feed, but the feed was linked on the page.
 
 For some URLs the RSS feed was not as easy to find (for instance https://www.rts.rs/page/rss/ci.html), and for some there were no entries in the feed or the feed returned a 403 response.
+
+Another run was run to test the deduplication and general fitness.
+
+After these tests some fiddling was necessary to get the script to run under crontab, but I finally managed to get it to run autonomously.
+
+At the time of writing the composition of the crawled dataset is as follows:
+
+```
+{'hr': 4222, 'sr': 3836, 'bs': 1461, 'me': 206}
+```
