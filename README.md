@@ -883,4 +883,6 @@ At the time of writing the composition of the crawled dataset is as follows:
 {'hr': 4222, 'sr': 3836, 'bs': 1461, 'me': 206}
 ```
 
-The logs are an absolute mess, trafilatura logs some stuff in the logs that I can't get rid off, and the problem is impossible to replicate in the interactive session. I'm thinking of 
+The logs are an absolute mess, trafilatura logs some stuff in the logs that I can't get rid off, and the problem is impossible to replicate in the interactive session. For now the logging will be disabled. Since a lot of the items were duplicated from one crawl to the next, I extended the crawling period to 2h.
+
+The next step is to prepare a function that will read the data and preprocess it in the same fashion as the other datasets.
