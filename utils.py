@@ -195,3 +195,9 @@ def load_SET_dataset():
         texts.append(results["text"])
 
     eval_df = pd.DataFrame(data={"text": texts, "labels": langs})
+    return eval_df
+
+def load_rss_dataset():
+    filename = "/home/peterr/macocu/taskB/task4/22_webcrawl.csv"
+    df = pd.read_csv(filename)
+    return df.rename(columns={"language":"labels"})
