@@ -199,5 +199,9 @@ def load_SET_dataset():
 
 def load_rss_dataset():
     filename = "/home/peterr/macocu/taskB/task4/22_webcrawl.csv"
-    df = pd.read_csv(filename)
+    import pandas as pd
+    df = pd.read_csv(filename, usecols=["text", "language"])
+    df["text"] = df.text.apply(transliterate)
+    df["text"] = df.text.apply(remove_chars)
+    df["text"] = df.text.apply(lambda s: " ".join([word for word in s.split(" ") if is_alpha(word)]))
     return df.rename(columns={"language":"labels"})

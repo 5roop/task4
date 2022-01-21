@@ -10,8 +10,8 @@ import pandas as pd
 from typing import List
 from trafilatura import fetch_url, extract
 
-logging.basicConfig(format='%(asctime)s %(levelname) - %(message)s',
-                    level=logging.INFO, filename='/home/peterr/macocu/taskB/task4/22_crawl_log.txt', filemode='w')
+logging.basicConfig(format='%(asctime)s %(levelname)s - %(message)s',
+                    level=logging.INFO, filename='/home/peterr/macocu/taskB/task4/22_crawl_log.txt', filemode='a')
 
 
 # %% Resources and function definitions
