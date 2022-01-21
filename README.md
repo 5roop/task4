@@ -898,4 +898,4 @@ I extracted the most common words per language and trained the Linear SVC classi
 
 ![](images/22_LinSVC_on_RSS.png)
 
-One thing we can note is the fact that in this case the ratio of instances not covered is dropping suprisingly uniformly for all 4 languages. The results are 
+One thing we can note is the fact that in this case the ratio of instances not covered is dropping suprisingly uniformly for all 4 languages. The classifier evaluation metrics are similar to those we saw before.
