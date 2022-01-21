@@ -886,3 +886,16 @@ At the time of writing the composition of the crawled dataset is as follows:
 The logs are an absolute mess, trafilatura logs some stuff in the logs that I can't get rid off, and the problem is impossible to replicate in the interactive session. For now the logging will be disabled. Since a lot of the items were duplicated from one crawl to the next, I extended the crawling period to 2h.
 
 The next step is to prepare a function that will read the data and preprocess it in the same fashion as the other datasets.
+
+# Addendum 2022-01-21T10:37:59
+
+I prepared the function that performed the same preprocessing on the RSS feed; namely 3 steps:
+1. Transliterate possible cyrillic characters to latin
+2. Remove puctuation, quotations, etc
+3. Remove any words with capital letters and numerals.
+
+I extracted the most common words per language and trained the Linear SVC classifier on web crawl data, but then I evaluated the resulting classifier on RSS feeds dataset. The results look somewhat expected:
+
+![](images/22_LinSVC_on_RSS.png)
+
+One thing we can note is the fact that in this case the ratio of instances not covered is dropping suprisingly uniformly for all 4 languages. The results are 
