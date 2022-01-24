@@ -132,7 +132,6 @@ def get_links_from_rss(url: str) -> List[str]:
         return None
     return [entry.get("link") for entry in feed.entries]
 
-
 def get_text_from_link(url: str) -> str:
     downloaded = fetch_url(url)
     text = extract(downloaded)
@@ -166,7 +165,7 @@ for lang, urls in top_level_dict.items():
 
 
 crawl_dir = "/home/peterr/macocu/taskB/task4/"
-crawl_file = "22_webcrawl.csv"
+crawl_file = "22_webcrawl.json"
 
 current_df = pd.DataFrame(data=current_items)
 current_size_start = current_df.shape[0]
@@ -180,25 +179,25 @@ logging.info(
 if crawl_file not in os.listdir(crawl_dir):
     logging.debug(
         "No existing data found, creating new one at {crawl_dir}/{crawl_file}.")
-    current_df.to_csv(
+    current_df.to_json(
         os.path.join(
             crawl_dir, crawl_file
         ),
-        index=False
+        #index=False
     )
 else:
     logging.debug("Found existing data, merging.")
-    old_df = pd.read_csv(
+    old_df = pd.read_json(
         os.path.join(
             crawl_dir, crawl_file
         )
     )
 
     merged = pd.concat([old_df, current_df], ignore_index=True)
-    merged = merged.drop_duplicates(subset="text", keep="first")
-    merged.to_csv(
+    merged = merged.drop_duplicates(subset="text", keep="first").drop_duplicates(subset="source", keep="first")
+    merged.to_json(
         os.path.join(crawl_dir, crawl_file),
-        index=False
+        #index=False
 
     )
     logging.info(
