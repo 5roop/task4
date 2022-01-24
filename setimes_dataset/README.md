@@ -21,16 +21,20 @@ In many cases the same news is present in all three languages. The splits have b
 
 ## Dataset structure
 
-Dataset is saved as a single [JSON file](SETimes.json) with the following formatting:
+The [JSON file](SETimes.json) is a dictionary with sequential keys. Each instance has the following fields:
+| field      | type   | meaning                                                  |
+|------------|--------|----------------------------------------------------------|
+| `text`     | string | article text                                             |
+| `language` | string | manually annotated language variant (`hr`, `bs` or `sr`) |
+| `split`    | string | which split the instance belongs to                      |
 
+### Sample instance
 ```
     "0":{
         "text":"Kultura i dru\u0161tvo: makedonski pravoslavci proslavili Bogojavljenje ....",
         "language":"bs",
         "split":"train"
-    },
-    "1": {...},
-    ...
+    }
 ```
 
 ## Dataset composition
