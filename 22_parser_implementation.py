@@ -11,7 +11,7 @@ from typing import List
 from trafilatura import fetch_url, extract
 
 logging.basicConfig(format='%(asctime)s %(levelname)s - %(message)s',
-                    level=logging.INFO, filename='/home/peterr/macocu/taskB/task4/22_crawl_log.txt', filemode='a')
+                    level=logging.WARNING, filename='/home/peterr/macocu/taskB/task4/22_crawl_log.txt', filemode='w')
 
 
 # %% Resources and function definitions
@@ -174,10 +174,10 @@ current_size_start = current_df.shape[0]
 current_df = current_df.drop_duplicates(subset="text", keep="first").drop_duplicates(subset="source", keep="first")
 
 current_size_after_dedup = current_df.shape[0]
-logging.info(
+logging.warning(
     f"Local deduplication deleted {current_size_start - current_size_after_dedup} items.")
 if crawl_file not in os.listdir(crawl_dir):
-    logging.debug(
+    logging.warning(
         "No existing data found, creating new one at {crawl_dir}/{crawl_file}.")
     current_df.to_json(
         os.path.join(
@@ -186,7 +186,7 @@ if crawl_file not in os.listdir(crawl_dir):
         #index=False
     )
 else:
-    logging.debug("Found existing data, merging.")
+    logging.warning("Found existing data, merging.")
     old_df = pd.read_json(
         os.path.join(
             crawl_dir, crawl_file
@@ -200,5 +200,6 @@ else:
         #index=False
 
     )
-    logging.info(
+    logging.warning(
         f"Second deduplication deleted {old_df.shape[0]+current_df.shape[0] - merged.shape[0]} instances.")
+logging.warning(f"Finished crawl at {time.strftime("%Y-%m-%dT%T%z")}. \n\n")
