@@ -2,7 +2,7 @@
 
 ## Dataset description
 
-This dataset has been prepared from South Eastern Times dataset articles. It consists from 9258 instances in three languages (Croatian, Bosnian, and Serbian), with the same news in all three languages. Individual news articles have been identified automatically extracted and split based on the authors' names and dates. With this we get the following composition:
+This dataset has been prepared from South Eastern Times dataset articles for the purpose of BCS variant classification. It consists from 9258 instances in three languages (Croatian, Bosnian, and Serbian). Individual news articles have been identified automatically extracted and split based on the authors' names and dates. With this we get the following composition:
 
 | language, split | count |
 |-----------------|-------|
