@@ -7,10 +7,16 @@ This dataset consists of 390268 tweets from 614 Twitter users. The users have be
 ## Dataset structure
 An 80-10-10 train-dev-test split has been performed on user level, meaning that all the tweets from a specific user are in a single fold. The splits are stratified by language on user level.
 
-The [JSON file](twitter.json) has the following structure:
+The [JSON file](twitter.json) is a dictionary with sequential keys. Each instance has the following fields:
+| field      | type            | meaning                                                        |
+|------------|-----------------|----------------------------------------------------------------|
+| `user`     | string          | Twitter username                                               |
+| `language` | string          | manually annotated language variant (`hr`, `bs`, `sr` or `me`) |
+| `split`    | string          | which split the instance belongs to                            |
+| `tweets`   | list of strings | individual tweets                                              |
 
+### Sample instance
 ```
-{
     "0":{
         "user":"danijelzv",
         "language":"bs",
@@ -19,11 +25,8 @@ The [JSON file](twitter.json) has the following structure:
             " Isto srce kao '95! ",
             " ne otkrivaj nam polo\u017eaj :-)",
             ....
-        },
-    "1":{....
-    },
-    ...
-}
+            ]
+        }
 ```
 
 ## Dataset composition
