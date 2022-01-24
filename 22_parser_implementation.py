@@ -171,7 +171,7 @@ current_df = pd.DataFrame(data=current_items)
 current_size_start = current_df.shape[0]
 
 # Filter current crawl results:
-current_df = current_df.drop_duplicates(subset="text", keep="first")
+current_df = current_df.drop_duplicates(subset="text", keep="first").drop_duplicates(subset="source", keep="first")
 
 current_size_after_dedup = current_df.shape[0]
 logging.info(
