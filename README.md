@@ -904,10 +904,11 @@ Compared to other datasets we see that LinearSVC exhibits an unusual tendency to
 
 # Meeting notes 2022-01-21T12:13:05
 
-* Nikola's idea: do not save items that came from the same website. Deduplicate on text, but also on "source" column.
-* Can trafilatura be put in non-verbose mode?
-* Switch crawl formats to json and do not strip newlines when crawling.
+* ✓ Nikola's idea: do not save items that came from the same website. Deduplicate on text, but also on "source" column.
+* Can trafilatura be put in non-verbose mode? Sadly, no.
+* ✓ Switch crawl formats to json and do not strip newlines when crawling.
 
 Steps forward: continue crawling, expect new montenegrin rss feeds. Publish the two finished datasets. Think of a good formatting/packaging. Keep all the information. SETimes: not necessary to parallelize all the data, but pay attention to possible data leakage!
 
 Re: speech data: we might go with Danijel's greedy alignment but on speech. It's possible we will soon retrain the model on non-normalized data. Think about the process details.
+
