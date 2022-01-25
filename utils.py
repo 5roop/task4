@@ -1,7 +1,9 @@
-from transliterate import translit
-import os, parse
+import os
+import parse
+import logging
 import pandas as pd
 from typing import Set, List
+from transliterate import translit
 chars_to_remove = {
     '!',
     '"',
@@ -65,6 +67,7 @@ raw_dir = "/home/peterr/macocu/taskB/data/raw"
 interim_dir = "/home/peterr/macocu/taskB/data/interim"
 final_dir = "/home/peterr/macocu/taskB/data/final"
 
+
 def remove_chars(input_text: str, chars_to_remove: Set[str] = chars_to_remove) -> Set[str]:
     for c in chars_to_remove:
         input_text = input_text.replace(c, "")
@@ -75,12 +78,12 @@ def transliterate(input_text: str) -> str:
     from transliterate import translit
     return translit(input_text, "sr", reversed=True)
 
-def is_alpha(token:str) -> bool:
+
+def is_alpha(token: str) -> bool:
     import re
     pattern = "^[a-zšđčćž]+$"
     compiled_pattern = re.compile(pattern)
     return bool(compiled_pattern.match(token))
-
 
 
 def get_N_tokens(N=5000, path="/home/peterr/macocu/taskB/task4/toy_tokens.csv") -> set:
@@ -98,9 +101,10 @@ def get_N_tokens(N=5000, path="/home/peterr/macocu/taskB/task4/toy_tokens.csv") 
     import pandas as pd
     import numpy as np
     df = pd.read_csv(path, index_col=0)
-    
+
     df = df.iloc[~df.index.isna(), :]
-    def filter_token(token:str)-> bool:
+
+    def filter_token(token: str) -> bool:
         token = token.replace(" ", "")
         if len(token) < 3:
             return False
@@ -149,7 +153,6 @@ def get_N_tokens(N=5000, path="/home/peterr/macocu/taskB/task4/toy_tokens.csv") 
     return important_features
 
 
-
 def read_and_split_file(path: str) -> List[str]:
     """Reads a text file and returns a list of strings. Every string is a document.
     Expects the input to be corpus where documents are separated with empty lines.
@@ -160,7 +163,7 @@ def read_and_split_file(path: str) -> List[str]:
 
     Returns:
         List[str]: list of filtered documents.
-    """    
+    """
     texts = list()
     chunk = ""
     with open(path, "r") as f:
@@ -176,6 +179,7 @@ def read_and_split_file(path: str) -> List[str]:
         words = [w if is_alpha(w) else " " for w in line.split(" ")]
         chunk += " ".join(words)
     return texts
+
 
 def load_SET_dataset():
     SETimes = list()
@@ -199,11 +203,13 @@ def load_SET_dataset():
     eval_df = pd.DataFrame(data={"text": texts, "labels": langs})
     return eval_df
 
+
 def load_rss_dataset():
-    filename = "/home/peterr/macocu/taskB/task4/22_webcrawl.csv"
+    filename = "/home/peterr/macocu/taskB/task4/22_webcrawl.json"
     import pandas as pd
-    df = pd.read_csv(filename, usecols=["text", "language"])
+    df = pd.read_json(filename)
     df["text"] = df.text.apply(transliterate)
     df["text"] = df.text.apply(remove_chars)
-    df["text"] = df.text.apply(lambda s: " ".join([word for word in s.split(" ") if is_alpha(word)]))
-    return df.rename(columns={"language":"labels"})
+    df["text"] = df.text.apply(lambda s: " ".join(
+        [word for word in s.split(" ") if is_alpha(word)]))
+    return df.rename(columns={"language": "labels"})
