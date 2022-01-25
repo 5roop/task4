@@ -192,14 +192,16 @@ else:
     old_df = pd.read_json(
         os.path.join(
             crawl_dir, crawl_file
-        )
+        ),
+        convert_dates=False,
     )
 
     merged = pd.concat([old_df, current_df], ignore_index=True)
     merged = merged.drop_duplicates(subset="text", keep="first").drop_duplicates(subset="source", keep="first")
     merged.to_json(
         os.path.join(crawl_dir, crawl_file),
-        #index=False
+        orient="records",
+        indent=4
 
     )
     logging.warning(
