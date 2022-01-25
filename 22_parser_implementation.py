@@ -133,9 +133,12 @@ def get_links_from_rss(url: str) -> List[str]:
     return [entry.get("link") for entry in feed.entries]
 
 def get_text_from_link(url: str) -> str:
+    try:
     downloaded = fetch_url(url)
     text = extract(downloaded)
     return text
+    except AttributeError:
+        return
 
 # %%  Main loop: crawling
 
