@@ -12,8 +12,7 @@ from trafilatura import fetch_url, extract
 
 logging.basicConfig(format='%(asctime)s %(levelname)s - %(message)s',
                     level=logging.WARNING, filename='/home/peterr/macocu/taskB/task4/22_crawl_log.txt', filemode='w')
-
-
+logging.warning(f"""Starting crawl at {time.strftime("%Y-%m-%dT%T%z")}.""")
 # %% Resources and function definitions
 urls_hr = [
     "https://www.index.hr/rss/info",
@@ -134,9 +133,9 @@ def get_links_from_rss(url: str) -> List[str]:
 
 def get_text_from_link(url: str) -> str:
     try:
-    downloaded = fetch_url(url)
-    text = extract(downloaded)
-    return text
+        downloaded = fetch_url(url)
+        text = extract(downloaded)
+        return text
     except AttributeError:
         return
 
@@ -205,4 +204,4 @@ else:
     )
     logging.warning(
         f"Second deduplication deleted {old_df.shape[0]+current_df.shape[0] - merged.shape[0]} instances.")
-logging.warning(f"Finished crawl at {time.strftime("%Y-%m-%dT%T%z")}. \n\n")
+logging.warning(f"""Finished crawl at {time.strftime("%Y-%m-%dT%T%z")}. \n\n""")
