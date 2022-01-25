@@ -21,7 +21,7 @@ In many cases the same news is present in all three languages. The splits have b
 
 ## Dataset structure
 
-The [JSON file](SETimes.json) is a dictionary with sequential keys. Each instance has the following fields:
+The [JSON file](SETimes.json) is a list of dictionaries. Each instance has the following fields:
 | field      | type   | meaning                                                  |
 |------------|--------|----------------------------------------------------------|
 | `text`     | string | article text                                             |
@@ -30,7 +30,7 @@ The [JSON file](SETimes.json) is a dictionary with sequential keys. Each instanc
 
 ### Sample instance
 ```
-    "0":{
+    {
         "text":"Kultura i dru\u0161tvo: makedonski pravoslavci proslavili Bogojavljenje ....",
         "language":"bs",
         "split":"train"
