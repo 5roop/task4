@@ -1,1 +1,243 @@
- 
+2022-01-25 09:30:18,740 WARNING - 
+
+Starting crawl at 2022-01-25T09:30:18+0100.
+2022-01-25 09:30:18,916 WARNING - We have no entries at this url: https://www.index.hr/rss/info
+2022-01-25 09:30:31,371 WARNING - We have no entries at this url: https://www.24sata.hr/flatpages/rss
+2022-01-25 09:30:57,923 ERROR - not enough text None
+2022-01-25 09:31:04,064 ERROR - not enough text None
+2022-01-25 09:31:10,950 ERROR - not enough text None
+2022-01-25 09:31:55,086 WARNING - We have no entries at this url: http://www.100posto.hr/rss
+2022-01-25 09:31:58,044 WARNING - We have no entries at this url: https://o-nama.hrt.hr/rss-i-mobilne-aplikacije/rss-328191
+2022-01-25 09:31:58,189 WARNING - We have no entries at this url: https://express.24sata.hr/rss/
+2022-01-25 09:32:07,104 ERROR - not enough text None
+2022-01-25 09:32:08,369 WARNING - We have no entries at this url: https://direktno.hr/rss/
+2022-01-25 09:33:48,461 WARNING - unexpected in p: personname La Boétieju , čijim gubitkom su obilježeni slavni „Eseji“ (na čelu s onim o prijateljstvu) ili Ferrante piše o dvije talijanske prijateljice koje guši mafija u ciklusu „Genijalna prijateljica“ ili ja pišem o dvije hrvatske prijateljice od kojih se jedna bori s osjećajem ništavila koji je guta na svim razinama. Manifest ne mora imati deset točaka. Može imati jednu točku, u kojoj su bezbrojne čestice ljudske bliskosti.
+2022-01-25 09:33:57,267 WARNING - We have no entries at this url: https://www.nezavisne.com/rss
+2022-01-25 09:33:57,905 WARNING - We have no entries at this url: https://www.oslobodjenje.ba/rss
+2022-01-25 09:34:04,636 WARNING - We have no entries at this url: https://www.slobodna-bosna.ba/rss/
+2022-01-25 09:34:13,173 WARNING - We have no entries at this url: https://www.doznajemo.com?format=rss
+2022-01-25 09:34:40,266 ERROR - not enough text None
+2022-01-25 09:35:04,698 WARNING - We have no entries at this url: https://zurnal.info/rss
+2022-01-25 09:35:06,261 WARNING - We have no entries at this url: https://dnevni.ba/feed/
+2022-01-25 09:35:07,024 WARNING - We have no entries at this url: https://pogled.ba/rss/naslovna
+2022-01-25 09:37:38,568 ERROR - no encoding detected: None
+2022-01-25 09:37:38,569 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-01-25 09:37:38,569 ERROR - empty HTML tree for URL None
+2022-01-25 09:37:38,805 ERROR - no encoding detected: None
+2022-01-25 09:37:38,805 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-01-25 09:37:38,805 ERROR - empty HTML tree for URL None
+2022-01-25 09:37:39,576 ERROR - no encoding detected: None
+2022-01-25 09:37:39,579 ERROR - not enough text None
+2022-01-25 09:37:39,944 ERROR - no encoding detected: None
+2022-01-25 09:37:39,945 ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2022-01-25 09:37:39,945 ERROR - empty HTML tree for URL None
+2022-01-25 09:37:58,188 WARNING - We have no entries at this url: https://www.blic.rs/rss
+2022-01-25 09:38:55,059 WARNING - We have no entries at this url: https://www.rts.rs/page/rss/ci.html
+2022-01-25 09:38:59,830 WARNING - We have no entries at this url: https://www.novosti.rs/rss
+2022-01-25 09:39:00,199 WARNING - We have no entries at this url: https://informer.rs/rss
+2022-01-25 09:42:33,784 WARNING - unexpected element seen: del None
+2022-01-25 09:42:50,698 WARNING - We have no entries at this url: https://time.rs/rss/rsspage
+2022-01-25 09:42:59,117 WARNING - We have no entries at this url: https://beta.rs/betarss
+2022-01-25 09:44:10,065 WARNING - unexpected in p: section                                         
+2022-01-25 09:44:23,931 WARNING - unexpected in p: section
+2022-01-25 09:44:27,009 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-25 09:44:29,890 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+
+
+
+
+                    
+                                        
+                                        
+                                        
+                                        
+2022-01-25 09:44:42,195 WARNING - unexpected in p: div 
+                                                        
+                
+                    
+                        SVE ĆE ZASIJATI! Napravite odlično sredstvo za čišćenje kuće!
+                    
+                    
+                
+            
+                
+                    
+                        OČISTITE ŠPORET OVOM NAMIRNICOM! Nećete verovati kako skida fleke!
+                    
+                    
+                
+                                                                 
+                                                kašičica tečnog sapuna
+2022-01-25 09:44:49,729 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+
+
+2022-01-25 09:44:55,298 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:44:56,135 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:44:58,492 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:44:59,247 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+
+
+2022-01-25 09:45:01,435 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-25 09:45:05,631 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:45:28,701 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:45:28,701 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:45:28,701 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:45:28,701 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:45:28,701 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:45:28,982 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-25 09:45:33,671 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+
+
+2022-01-25 09:45:38,922 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:45:39,752 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-25 09:45:50,644 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-25 09:46:00,065 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:46:00,065 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+
+2022-01-25 09:46:18,334 ERROR - not a 200 response: 403 for URL https://www.cdm.me/svijet/evropa/snijeg-paralisao-istanbul/
+2022-01-25 09:46:18,335 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-25 09:46:18,335 ERROR - empty HTML tree for URL None
+2022-01-25 09:46:18,384 ERROR - not a 200 response: 403 for URL https://www.cdm.me/sport/tenis/kirjos-pogodio-djecaka-lopticom-pa-odusevio-sve-potezom/
+2022-01-25 09:46:18,385 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-25 09:46:18,385 ERROR - empty HTML tree for URL None
+2022-01-25 09:46:18,436 ERROR - not a 200 response: 403 for URL https://www.cdm.me/drustvo/brajovic-dostignuca-naucnoistrazivackih-grupa-sa-kojima-saradujem-crpe-najvecu-motivaciju-i-inspiraciju-za-rad/
+2022-01-25 09:46:18,437 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-25 09:46:18,437 ERROR - empty HTML tree for URL None
+2022-01-25 09:46:18,496 ERROR - not a 200 response: 403 for URL https://www.cdm.me/sport/fudbal/cavi-vrsi-presing-da-juventus-dovede-vlahovica/
+2022-01-25 09:46:18,497 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-25 09:46:18,497 ERROR - empty HTML tree for URL None
+2022-01-25 09:46:18,549 ERROR - not a 200 response: 403 for URL https://www.cdm.me/politika/konjevic-ne-bi-me-zacudilo-da-krivokapic-pocne-strajk-gladu-zbog-ugrozenosti-fotelje/
+2022-01-25 09:46:18,550 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-25 09:46:18,550 ERROR - empty HTML tree for URL None
+2022-01-25 09:46:18,607 ERROR - not a 200 response: 403 for URL https://www.cdm.me/politika/saranovic-ura-vraca-dps-marovic-dps-ostaje-u-opoziciji/
+2022-01-25 09:46:18,608 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-25 09:46:18,608 ERROR - empty HTML tree for URL None
+2022-01-25 09:46:18,659 ERROR - not a 200 response: 403 for URL https://www.cdm.me/sport/tenis/nadal-priznao-da-je-imao-srece-imao-je-stomacnih-problema/
+2022-01-25 09:46:18,660 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-25 09:46:18,660 ERROR - empty HTML tree for URL None
+2022-01-25 09:46:18,723 ERROR - not a 200 response: 403 for URL https://www.cdm.me/politika/prijava-protiv-spajica-milatovica-mitrovica-i-bratic/
+2022-01-25 09:46:18,724 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-25 09:46:18,724 ERROR - empty HTML tree for URL None
+2022-01-25 09:46:18,775 ERROR - not a 200 response: 403 for URL https://www.cdm.me/svijet/region/patrijarh-prebolio-koronavirus-hvala-svima-koji-su-se-molili-da-ozdravim/
+2022-01-25 09:46:18,776 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-25 09:46:18,776 ERROR - empty HTML tree for URL None
+2022-01-25 09:46:18,831 ERROR - not a 200 response: 403 for URL https://www.cdm.me/sport/tenis/nadalu-prezivio-maraton-na-dva-koraka-do-istorije/
+2022-01-25 09:46:18,832 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-25 09:46:18,832 ERROR - empty HTML tree for URL None
+2022-01-25 09:46:32,144 WARNING - Local deduplication deleted 247 items.
+2022-01-25 09:46:32,144 WARNING - Found existing data, merging.
+2022-01-25 09:46:33,482 WARNING - Second deduplication deleted 452 instances.
+2022-01-25 09:46:33,483 WARNING - Finished crawl at 2022-01-25T09:46:33+0100. 
+
+

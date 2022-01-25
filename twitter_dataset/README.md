@@ -36,9 +36,8 @@ The [JSON file](twitter.json) is a dictionary with sequential keys. Each instanc
 ![](images/users_length_distribution.png)
 
 ## Known issues:
-As seen up to line 3000
 
-* Transliteration module transforms capital letter "Љ" and "Њ" as "Lj" and "Nj", respectively.
+* Transliteration module transforms capital letters "Љ" and "Њ" as "Lj" and "Nj", respectively. Note the "j" in the transliteration is not capitalized.
 * Some tweets are in English, consist only of smileys, or are not complete sentences (e.g. "Apuglia, Italy")
 * Some tweets are clearly written by bots (e.g. "2 people followed me and 3 people unfollowed me \/\/ automatically checked by ", note how the sentence has a missing TW handle that was removed in the preprocessing).
 * Certain users use a great deal of offensive words.
