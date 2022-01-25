@@ -912,3 +912,8 @@ Steps forward: continue crawling, expect new montenegrin rss feeds. Publish the 
 
 Re: speech data: we might go with Danijel's greedy alignment but on speech. It's possible we will soon retrain the model on non-normalized data. Think about the process details.
 
+
+
+# Meeting notes 2022-01-25T13:40:20
+
+* ✓ Re-do the Twitter dataset with only transliterating, but do not remove URLS, mentions, hashtags...
