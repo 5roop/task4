@@ -16,7 +16,7 @@ Per-language composition:
 ## Dataset structure
 An 80-10-10 train-dev-test split has been performed on user level, meaning that all the tweets from a specific user are in a single fold. The splits are stratified by language on user level.
 
-The [JSON file](twitter.json) is a dictionary with sequential keys. Each instance has the following fields:
+The [JSON file](twitter.json) is a list of dictionaries. Each instance has the following fields:
 | field      | type            | meaning                                                        |
 |------------|-----------------|----------------------------------------------------------------|
 | `user`     | string          | Twitter username                                               |
@@ -26,7 +26,7 @@ The [JSON file](twitter.json) is a dictionary with sequential keys. Each instanc
 
 ### Sample instance
 ```
-    "0":{
+    {
         "user":"danijelzv",
         "language":"bs",
         "split":"train",
@@ -35,7 +35,7 @@ The [JSON file](twitter.json) is a dictionary with sequential keys. Each instanc
             " ne otkrivaj nam polo\u017eaj :-)",
             ....
             ]
-        }
+    }
 ```
 
 ## Dataset composition
