@@ -4,6 +4,15 @@
 
 This dataset consists of 390268 tweets from 614 Twitter users. The users have been manually annotated with the BCMS variant they use. Twitter handles and URLs have been filtered from the tweets and all tweets have been transliterated from cyrillic to latin script. The intended use for this dataset is BCMS variant identification.
 
+Per-language composition:
+
+| language variant | count |
+|:-----------------|------:|
+| sr               |   394 |
+| hr               |    89 |
+| bs               |    75 |
+| me               |    56 |
+
 ## Dataset structure
 An 80-10-10 train-dev-test split has been performed on user level, meaning that all the tweets from a specific user are in a single fold. The splits are stratified by language on user level.
 
@@ -30,6 +39,8 @@ The [JSON file](twitter.json) is a dictionary with sequential keys. Each instanc
 ```
 
 ## Dataset composition
+
+Since the stratification was performed on user level, we want to assure the individual splits have approximately the same composition. In this case character count of all the users' tweets was checked. As we see Montenegrin tweet distribution is shaped slightly differently than the rest, but since there aren't many Montenegrin users anyway, there is not much to be done.
 
 ![](images/language_length_distribution.png)
 
