@@ -2,7 +2,7 @@
 
 ## Dataset description
 
-This dataset consists of 390268 tweets from 614 Twitter users. The users have been manually annotated with the BCMS variant they use. Twitter handles and URLs have been filtered from the tweets and all tweets have been transliterated from cyrillic to latin script. The intended use for this dataset is BCMS variant identification.
+This dataset consists of 390268 tweets from 614 Twitter users. The users have been manually annotated with the BCMS variant they use. The tweets were transliterated from Cyrillic to Latin script. The intended use for this dataset is BCMS variant identification.
 
 Per-language composition:
 
