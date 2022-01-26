@@ -50,3 +50,177 @@
 2022-01-26 08:34:29,532 WARNING - We have no entries at this url: https://zurnal.info/rss
 2022-01-26 08:34:31,052 WARNING - We have no entries at this url: https://dnevni.ba/feed/
 2022-01-26 08:34:31,447 WARNING - We have no entries at this url: https://pogled.ba/rss/naslovna
+2022-01-26 08:37:10,444 ERROR - no encoding detected: None
+2022-01-26 08:37:10,445 ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2022-01-26 08:37:10,445 ERROR - empty HTML tree for URL None
+2022-01-26 08:37:10,829 ERROR - no encoding detected: None
+2022-01-26 08:37:10,829 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-01-26 08:37:10,829 ERROR - empty HTML tree for URL None
+2022-01-26 08:37:11,066 ERROR - no encoding detected: None
+2022-01-26 08:37:11,067 ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2022-01-26 08:37:11,067 ERROR - empty HTML tree for URL None
+2022-01-26 08:37:11,308 ERROR - no encoding detected: None
+2022-01-26 08:37:11,308 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-01-26 08:37:11,309 ERROR - empty HTML tree for URL None
+2022-01-26 08:37:30,225 WARNING - We have no entries at this url: https://www.blic.rs/rss
+2022-01-26 08:38:34,262 WARNING - We have no entries at this url: https://www.rts.rs/page/rss/ci.html
+2022-01-26 08:38:40,634 WARNING - We have no entries at this url: https://www.novosti.rs/rss
+2022-01-26 08:38:41,010 WARNING - We have no entries at this url: https://informer.rs/rss
+2022-01-26 08:38:46,002 WARNING - We have no entries at this url: https://www.vesti-online.com/feed/
+2022-01-26 08:41:47,727 WARNING - unexpected element seen: del None
+2022-01-26 08:42:03,691 WARNING - We have no entries at this url: https://time.rs/rss/rsspage
+2022-01-26 08:42:11,549 WARNING - We have no entries at this url: https://beta.rs/betarss
+2022-01-26 08:43:28,489 WARNING - unexpected in p: div 
+                                                        
+                
+                    
+                        OVAJ DEO TELA JE PRAVI RASADNIK BAKTERIJA! Ovo sigurno niste znali!
+                    
+                    
+                
+            
+                
+                    
+                        TOPLA KUPKA JE SPAS ZA ORGANIZAM! Opustite se pred spavanje!
+                    
+                    
+                
+            
+                 
+                                                
+2022-01-26 08:43:28,489 WARNING - unexpected in p: article 
+                    
+                    
+                        
+                    
+                     
+                                                                
+2022-01-26 08:43:28,836 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-26 08:43:41,675 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-26 08:43:47,194 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-26 08:43:51,331 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-26 08:44:07,152 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-26 08:44:13,230 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-26 08:44:14,395 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-26 08:44:25,323 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-26 08:44:28,600 WARNING - unexpected in p: div 
+                                                        
+                
+                    
+                        SRBINU DŽAK PARA OD JUVENTUSA! Vlahović postaje treći najplaćeniji fudbaler u Seriji A!
+                    
+                    
+                
+            
+                
+                    
+                        "Ciganine, gotov si"! JEZIVE PRETNJE VLAHOVIĆU! Navijači BESNI, brutalne uvrede, pljuvanje... "Neće te ni telohranitelji spasiti! “(FOTO)
+                    
+                    
+                
+            
+                 
+                                                Tri odsto od transfera u Juventus ide beogradskim crno-belima, pa u Partizanu trljaju ruke. 
+2022-01-26 08:44:28,600 WARNING - unexpected in p: article 
+                    
+                    
+                        
+                    
+                     
+                                                                
+2022-01-26 08:44:30,564 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-26 08:44:40,292 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-26 08:45:05,381 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-26 08:45:26,983 ERROR - not enough text None
+2022-01-26 08:45:31,625 ERROR - not a 200 response: 403 for URL https://www.cdm.me/sport/tenis/sjajni-cicipas-ocitao-lekciju-sineru/
+2022-01-26 08:45:31,626 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-26 08:45:31,626 ERROR - empty HTML tree for URL None
+2022-01-26 08:45:31,670 ERROR - not a 200 response: 403 for URL https://www.cdm.me/sport/kosarka/jokic-dominirao-protiv-pistonsa-kingsi-izgubili-sa-53-poena-razlike/
+2022-01-26 08:45:31,670 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-26 08:45:31,670 ERROR - empty HTML tree for URL None
+2022-01-26 08:45:31,723 ERROR - not a 200 response: 403 for URL https://www.cdm.me/drustvo/mededovic-podgorica-medu-rijetkim-gradovima-koji-subvencionise-podstanare/
+2022-01-26 08:45:31,724 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-26 08:45:31,724 ERROR - empty HTML tree for URL None
+2022-01-26 08:45:31,771 ERROR - not a 200 response: 403 for URL https://www.cdm.me/tehno-nauka/telefoni/rekordan-broj-zahtjeva-za-uklanjanje-sadrzaja-sa-twitter-a/
+2022-01-26 08:45:31,772 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-26 08:45:31,772 ERROR - empty HTML tree for URL None
+2022-01-26 08:45:31,821 ERROR - not a 200 response: 403 for URL https://www.cdm.me/sport/tenis/svjontek-i-kolins-u-polufinalu/
+2022-01-26 08:45:31,821 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-26 08:45:31,822 ERROR - empty HTML tree for URL None
+2022-01-26 08:45:31,871 ERROR - not a 200 response: 403 for URL https://www.cdm.me/ekonomija/kekovic-nece-imati-hrabrosti-da-odustanu-od-evrope-sad/
+2022-01-26 08:45:31,872 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-26 08:45:31,872 ERROR - empty HTML tree for URL None
+2022-01-26 08:45:31,920 ERROR - not a 200 response: 403 for URL https://www.cdm.me/auto-moto/automobili/sta-da-uradite-ako-vam-se-zamrzne-rucna-kocnica/
+2022-01-26 08:45:31,921 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-26 08:45:31,921 ERROR - empty HTML tree for URL None
+2022-01-26 08:45:31,970 ERROR - not a 200 response: 403 for URL https://www.cdm.me/politika/deset-do-osam-7/
+2022-01-26 08:45:31,970 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-26 08:45:31,970 ERROR - empty HTML tree for URL None
+2022-01-26 08:45:32,016 ERROR - not a 200 response: 403 for URL https://www.cdm.me/ekonomija/stigao-prijedlog-autoput-da-se-zove-princeza-ksenija/
+2022-01-26 08:45:32,017 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-26 08:45:32,017 ERROR - empty HTML tree for URL None
+2022-01-26 08:45:32,062 ERROR - not a 200 response: 403 for URL https://www.cdm.me/politika/smanjiti-prostor-za-sumanute-politicke-intervencije/
+2022-01-26 08:45:32,063 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-26 08:45:32,063 ERROR - empty HTML tree for URL None
+2022-01-26 08:45:42,703 WARNING - Local deduplication deleted 250 items.
+2022-01-26 08:45:42,703 WARNING - Found existing data, merging.
+2022-01-26 08:45:43,883 WARNING - Second deduplication deleted 1861 instances.
+2022-01-26 08:45:43,884 WARNING - Finished crawl at 2022-01-26T08:45:43+0100. 
+
+
