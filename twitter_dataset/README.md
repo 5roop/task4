@@ -31,8 +31,8 @@ The [JSON file](twitter.json) is a list of dictionaries. Each instance has the f
         "language":"bs",
         "split":"train",
         "tweets":[
-            " Isto srce kao '95! ",
-            " ne otkrivaj nam polo\u017eaj :-)",
+            "RT @BojanSolaja: Isto srce kao '95! #Srbija #EuroBasket2013",
+            "@nikola_dragovic @acovracevic @dule5rovic ne otkrivaj nam polo\u017eaj :-)",
             ....
             ]
     }
@@ -50,6 +50,5 @@ Since the stratification was performed on user level, we want to assure the indi
 
 * Transliteration module transforms capital letters "Љ" and "Њ" as "Lj" and "Nj", respectively. Note the "j" in the transliteration is not capitalized.
 * Some tweets are in English, consist only of smileys, or are not complete sentences (e.g. "Apuglia, Italy")
-* Some tweets are clearly written by bots (e.g. "2 people followed me and 3 people unfollowed me \/\/ automatically checked by ", note how the sentence has a missing TW handle that was removed in the preprocessing).
+* Some tweets are clearly written by bots.
 * Certain users use a great deal of offensive words.
-* If the tweet was a reply or a retweet, there is often little text remaining, sometimes as little as "haha" or "...".
