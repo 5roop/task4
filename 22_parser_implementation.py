@@ -55,6 +55,7 @@ urls_me = [
     "http://barinfo.me/feed/",
     "https://crna.gora.me/feed/",
     "feed://rtcg.me/rss.html"
+    "https://www.cdm.me/rss/",
 ]
 urls_bs = [
     "https://avaz.ba/rss",
