@@ -1,82 +1,167 @@
-2022-01-27 10:30:02,858 WARNING - Starting crawl at 2022-01-27T10:30:02+0100.
-2022-01-27 10:30:03,035 WARNING - We have no entries at this url: https://www.index.hr/rss/info
-2022-01-27 10:30:14,860 WARNING - We have no entries at this url: https://www.24sata.hr/flatpages/rss
-2022-01-27 10:31:08,896 ERROR - not enough text None
-2022-01-27 10:31:57,457 WARNING - We have no entries at this url: http://www.100posto.hr/rss
-2022-01-27 10:32:00,129 WARNING - We have no entries at this url: https://o-nama.hrt.hr/rss-i-mobilne-aplikacije/rss-328191
-2022-01-27 10:32:00,252 WARNING - We have no entries at this url: https://express.24sata.hr/rss/
-2022-01-27 10:32:09,227 ERROR - not enough text None
-2022-01-27 10:32:09,337 ERROR - not enough text None
-2022-01-27 10:32:09,847 WARNING - We have no entries at this url: https://direktno.hr/rss/
-2022-01-27 10:32:36,352 ERROR - not enough text None
-2022-01-27 10:33:42,304 WARNING - unexpected in p: personname La Boétieju , čijim gubitkom su obilježeni slavni „Eseji“ (na čelu s onim o prijateljstvu) ili Ferrante piše o dvije talijanske prijateljice koje guši mafija u ciklusu „Genijalna prijateljica“ ili ja pišem o dvije hrvatske prijateljice od kojih se jedna bori s osjećajem ništavila koji je guta na svim razinama. Manifest ne mora imati deset točaka. Može imati jednu točku, u kojoj su bezbrojne čestice ljudske bliskosti.
-2022-01-27 10:33:51,906 WARNING - We have no entries at this url: https://www.nezavisne.com/rss
-2022-01-27 10:33:52,608 WARNING - We have no entries at this url: https://www.oslobodjenje.ba/rss
-2022-01-27 10:33:59,049 WARNING - We have no entries at this url: https://www.slobodna-bosna.ba/rss/
-2022-01-27 10:34:05,751 WARNING - We have no entries at this url: https://www.doznajemo.com?format=rss
-2022-01-27 10:34:30,739 ERROR - not enough text None
-2022-01-27 10:34:47,120 WARNING - We have no entries at this url: https://zurnal.info/rss
-2022-01-27 10:34:48,515 WARNING - We have no entries at this url: https://dnevni.ba/feed/
-2022-01-27 10:34:48,980 WARNING - We have no entries at this url: https://pogled.ba/rss/naslovna
-2022-01-27 10:37:36,774 ERROR - no encoding detected: None
-2022-01-27 10:37:36,775 ERROR - parsed tree length: 1, wrong data type or not valid HTML
-2022-01-27 10:37:36,775 ERROR - empty HTML tree for URL None
-2022-01-27 10:37:37,221 ERROR - no encoding detected: None
-2022-01-27 10:37:37,222 ERROR - parsed tree length: 1, wrong data type or not valid HTML
-2022-01-27 10:37:37,222 ERROR - empty HTML tree for URL None
-2022-01-27 10:37:37,467 ERROR - no encoding detected: None
-2022-01-27 10:37:37,468 ERROR - parsed tree length: 0, wrong data type or not valid HTML
-2022-01-27 10:37:37,468 ERROR - empty HTML tree for URL None
-2022-01-27 10:37:38,090 ERROR - no encoding detected: None
-2022-01-27 10:37:38,090 ERROR - parsed tree length: 1, wrong data type or not valid HTML
-2022-01-27 10:37:38,091 ERROR - empty HTML tree for URL None
-2022-01-27 10:37:54,452 WARNING - We have no entries at this url: https://www.blic.rs/rss
-2022-01-27 10:38:37,688 WARNING - unexpected in p: mailto : nagradnaakcijaŽadriamedia.rs>s naslovom mejla/Subject: Za konkurs "Drvo i život". U okviru prijave, učesnici treba da uz fotografiju pošalju i ime i prezime, godište autora i mejl adresu roditelja, staratelja ili usvojioca, odnosno kontakt osobe autora. None
-2022-01-27 10:38:37,688 WARNING - unexpected in p: mailto :nagradnaakcijaŽadriamedia.rs>s naslovom mejla: Za konkurs "Drvo i život". None
-2022-01-27 10:39:00,439 WARNING - We have no entries at this url: https://www.rts.rs/page/rss/ci.html
-2022-01-27 10:39:07,603 WARNING - We have no entries at this url: https://www.novosti.rs/rss
-2022-01-27 10:39:07,986 WARNING - We have no entries at this url: https://informer.rs/rss
-2022-01-27 10:42:56,561 WARNING - unexpected element seen: del None
-2022-01-27 10:43:14,103 WARNING - wrong encoding detected: utf-8
-2022-01-27 10:43:20,654 WARNING - wrong encoding detected: utf-8
-2022-01-27 10:43:27,646 WARNING - We have no entries at this url: https://time.rs/rss/rsspage
-2022-01-27 10:43:35,266 WARNING - We have no entries at this url: https://beta.rs/betarss
-2022-01-27 10:44:43,550 WARNING - unexpected in p: section 
+2022-01-28 08:30:02,787 WARNING - Starting crawl at 2022-01-28T08:30:02+0100.
+2022-01-28 08:30:02,969 WARNING - We have no entries at this url: https://www.index.hr/rss/info
+2022-01-28 08:30:16,146 WARNING - We have no entries at this url: https://www.24sata.hr/flatpages/rss
+2022-01-28 08:30:28,605 ERROR - not enough text None
+2022-01-28 08:30:29,106 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/rak/dnevni-horoskop-rak-28-01-2022-64e62f5e-7f7d-11ec-97f1-6eb76a688755
+2022-01-28 08:30:29,107 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-28 08:30:29,108 ERROR - empty HTML tree for URL None
+2022-01-28 08:30:29,627 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/bik/dnevni-horoskop-bik-28-01-2022-cbec8320-7f7c-11ec-8c58-4a92f9abb92d
+2022-01-28 08:30:29,628 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-28 08:30:29,628 ERROR - empty HTML tree for URL None
+2022-01-28 08:30:30,181 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/strijelac/dnevni-horoskop-strijelac-28-01-2022-103ad006-7f80-11ec-9f85-1671d7f67643
+2022-01-28 08:30:30,182 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-28 08:30:30,182 ERROR - empty HTML tree for URL None
+2022-01-28 08:30:31,896 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/vaga/dnevni-horoskop-vaga-28-01-2022-9a43c592-7f7f-11ec-a660-4a92f9abb92d
+2022-01-28 08:30:31,897 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-28 08:30:31,897 ERROR - empty HTML tree for URL None
+2022-01-28 08:30:32,093 ERROR - not enough text None
+2022-01-28 08:30:35,295 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/ovan/dnevni-horoskop-ovan-28-01-2022-a2091a32-7f7c-11ec-9acb-6eb76a688755
+2022-01-28 08:30:35,296 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-28 08:30:35,296 ERROR - empty HTML tree for URL None
+2022-01-28 08:30:35,895 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/vodenjak/dnevni-horoskop-vodenjak-28-01-2022-8712bb76-7f80-11ec-9259-6eb76a688755
+2022-01-28 08:30:35,895 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-28 08:30:35,895 ERROR - empty HTML tree for URL None
+2022-01-28 08:30:38,091 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/djevica/dnevni-horoskop-djevica-28-01-2022-cb0e48c0-7f7d-11ec-82ff-1671d7f67643
+2022-01-28 08:30:38,092 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-01-28 08:30:38,093 ERROR - empty HTML tree for URL None
+2022-01-28 08:30:49,101 ERROR - not enough text None
+2022-01-28 08:30:49,519 ERROR - not enough text None
+2022-01-28 08:31:40,206 WARNING - We have no entries at this url: http://www.100posto.hr/rss
+2022-01-28 08:31:42,988 WARNING - We have no entries at this url: https://o-nama.hrt.hr/rss-i-mobilne-aplikacije/rss-328191
+2022-01-28 08:31:43,117 WARNING - We have no entries at this url: https://express.24sata.hr/rss/
+2022-01-28 08:31:46,688 ERROR - not enough text None
+2022-01-28 08:31:48,054 ERROR - not enough text None
+2022-01-28 08:31:50,488 WARNING - We have no entries at this url: https://direktno.hr/rss/
+2022-01-28 08:32:22,794 ERROR - not enough text None
+2022-01-28 08:33:22,040 WARNING - unexpected in p: personname La Boétieju , čijim gubitkom su obilježeni slavni „Eseji“ (na čelu s onim o prijateljstvu) ili Ferrante piše o dvije talijanske prijateljice koje guši mafija u ciklusu „Genijalna prijateljica“ ili ja pišem o dvije hrvatske prijateljice od kojih se jedna bori s osjećajem ništavila koji je guta na svim razinama. Manifest ne mora imati deset točaka. Može imati jednu točku, u kojoj su bezbrojne čestice ljudske bliskosti.
+2022-01-28 08:33:30,231 WARNING - We have no entries at this url: https://www.nezavisne.com/rss
+2022-01-28 08:33:30,825 WARNING - We have no entries at this url: https://www.oslobodjenje.ba/rss
+2022-01-28 08:34:04,949 ERROR - not enough text None
+2022-01-28 08:34:28,606 WARNING - We have no entries at this url: https://zurnal.info/rss
+2022-01-28 08:34:30,047 WARNING - We have no entries at this url: https://dnevni.ba/feed/
+2022-01-28 08:34:30,421 WARNING - We have no entries at this url: https://pogled.ba/rss/naslovna
+2022-01-28 08:36:37,398 ERROR - no encoding detected: None
+2022-01-28 08:36:37,398 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-01-28 08:36:37,398 ERROR - empty HTML tree for URL None
+2022-01-28 08:36:37,667 ERROR - no encoding detected: None
+2022-01-28 08:36:37,667 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-01-28 08:36:37,667 ERROR - empty HTML tree for URL None
+2022-01-28 08:36:37,949 ERROR - no encoding detected: None
+2022-01-28 08:36:37,949 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-01-28 08:36:37,949 ERROR - empty HTML tree for URL None
+2022-01-28 08:36:38,229 ERROR - no encoding detected: None
+2022-01-28 08:36:38,229 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-01-28 08:36:38,229 ERROR - empty HTML tree for URL None
+2022-01-28 08:36:52,118 WARNING - We have no entries at this url: https://www.blic.rs/rss
+2022-01-28 08:38:01,108 WARNING - We have no entries at this url: https://www.rts.rs/page/rss/ci.html
+2022-01-28 08:38:07,990 WARNING - We have no entries at this url: https://www.novosti.rs/rss
+2022-01-28 08:38:08,406 WARNING - We have no entries at this url: https://informer.rs/rss
+2022-01-28 08:38:21,495 ERROR - not enough text None
+2022-01-28 08:38:22,201 ERROR - not enough text None
+2022-01-28 08:38:23,166 ERROR - not enough text None
+2022-01-28 08:38:23,925 ERROR - not enough text None
+2022-01-28 08:41:40,051 WARNING - unexpected element seen: del None
+2022-01-28 08:42:02,772 WARNING - wrong encoding detected: utf-8
+2022-01-28 08:42:08,128 WARNING - We have no entries at this url: https://time.rs/rss/rsspage
+2022-01-28 08:42:15,984 WARNING - We have no entries at this url: https://beta.rs/betarss
+2022-01-28 08:43:32,198 WARNING - unexpected in p: section 
                                                 
                     
                                                                  
                                         
-2022-01-27 10:44:52,442 WARNING - unexpected in p: section 
+2022-01-28 08:43:47,313 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-28 08:43:49,890 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-28 08:43:56,558 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-28 08:43:57,256 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-28 08:44:08,253 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-28 08:44:17,760 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                                                            
+2022-01-28 08:44:21,178 WARNING - unexpected in p: div 
+                                                        
+                
+                    
+                        Teška saobraćajka kod Sremske Mitrovice! JEDAN MUŠKARAC POGINUO, vozač drugog automobila u životnoj opasnosti!
+                    
+                    
+                
+            
+                
+                    
+                        Vozili pod dejstvom psihoaktivnih susptanci
+                    
+                    
+                
+            
+                 
+                                                nedozvoljenog preticanja u uslovima slabe vidljivosti i klizavog kolovoza, saznaje nezvanično
+2022-01-28 08:44:21,178 WARNING - unexpected in p: article 
+                    
+                    
+                        
+                    
+                     
+                                                                
+2022-01-28 08:44:35,703 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-28 08:44:49,205 WARNING - unexpected in p: section 
                                                 
                     
                                                                  
                                         
-2022-01-27 10:44:53,247 WARNING - unexpected in p: section 
+2022-01-28 08:44:50,195 WARNING - unexpected in p: section 
                                                 
                     
                                                                  
                                         
-2022-01-27 10:44:55,676 WARNING - unexpected in p: section 
+2022-01-28 08:44:53,044 WARNING - unexpected in p: section 
                                                 
                     
                                                                  
                                         
-2022-01-27 10:44:59,398 WARNING - unexpected in p: section 
+2022-01-28 08:45:00,191 WARNING - unexpected in p: section 
                                                 
                     
                                                                  
                                         
-2022-01-27 10:45:16,605 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-27 10:45:16,605 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-27 10:45:20,533 WARNING - unexpected in p: section 
+2022-01-28 08:45:01,110 WARNING - unexpected in p: section 
                                                 
                     
                                                                  
@@ -85,12 +170,17 @@
                                         
                                         
                                         
-2022-01-27 10:45:24,541 WARNING - unexpected in p: section 
+2022-01-28 08:45:17,257 WARNING - unexpected in p: section 
                                                 
                     
                                                                  
                                         
-2022-01-27 10:45:24,997 WARNING - unexpected in p: section 
+2022-01-28 08:45:17,257 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-28 08:45:21,770 WARNING - unexpected in p: section 
                                                 
                     
                                                                  
@@ -99,57 +189,8 @@
                                         
                                         
                                         
-2022-01-27 10:45:32,737 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                                            
-                                        
-                                        
-                                        
-                                        
-2022-01-27 10:45:46,570 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-27 10:46:12,801 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                                            
-                                        
-                                        
-                                        
-                                        
-2022-01-27 10:46:35,725 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-27 10:46:35,726 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-27 10:46:38,712 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                                            
-                                        
-                                        
-                                        
-                                        
-2022-01-27 10:46:40,389 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-27 10:47:08,529 WARNING - We have no entries at this url: https://www.cdm.me/feed/
-2022-01-27 10:47:28,677 WARNING - Local deduplication deleted 250 items.
-2022-01-27 10:47:28,677 WARNING - Found existing data, merging.
-2022-01-27 10:47:30,118 WARNING - Second deduplication deleted 1675 instances.
-2022-01-27 10:47:30,118 WARNING - Finished crawl at 2022-01-27T10:47:30+0100. 
-
-
+2022-01-28 08:45:38,626 ERROR - not enough text None
+2022-01-28 08:45:39,454 WARNING - We have no entries at this url: https://www.cdm.me/feed/
+2022-01-28 08:45:49,330 WARNING - We have no entries at this url: feed://rtcg.me/rss.htmlhttps://www.cdm.me/rss/
+2022-01-28 08:45:49,359 WARNING - Local deduplication deleted 251 items.
+2022-01-28 08:45:49,359 WARNING - Found existing data, merging.
