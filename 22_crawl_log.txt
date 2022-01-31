@@ -80,3 +80,116 @@
 2022-01-31 08:42:38,458 WARNING - We have no entries at this url: https://pescanik.net/feed
 2022-01-31 08:43:08,061 WARNING - We have no entries at this url: https://time.rs/rss/rsspage
 2022-01-31 08:43:16,048 WARNING - We have no entries at this url: https://beta.rs/betarss
+2022-01-31 08:44:41,272 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-31 08:44:47,684 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        Bogdana, Nataša i Željko su u igraonici ostali više od tri sata, nakon čega su otišli na večeru, pa u svoj dom u Ljutice Bogdana, gde ih je čekao tata Veljko.
+2022-01-31 08:44:47,684 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-31 08:44:54,907 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-31 08:44:54,907 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-31 08:45:22,352 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-31 08:45:24,183 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-31 08:45:30,141 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-31 08:45:33,440 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-31 08:45:50,597 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-31 08:45:50,598 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-01-31 08:46:05,461 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-31 08:46:06,074 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-31 08:46:09,592 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-01-31 08:46:19,903 WARNING - unexpected in p: div 
+                                                        
+                
+                    
+                        OTKRIVAMO! ŠOKANTNI DETALJI IZ ISTRAGE EVROPOLA! Zvicer: Imamo 100.000.000 dolara za ubistvo Vučića!
+                    
+                    
+                
+            
+                
+                    
+                        SAZNAJEMO! ZAKAZAN SASTANAK SNS I SPS! Delegacije predvode Vučić i Dačić!
+                    
+                    
+                
+            
+                 
+                                                
+2022-01-31 08:46:19,904 WARNING - unexpected in p: article 
+                    
+                    
+                        
+                    
+                     
+                                                                
+2022-01-31 08:46:37,962 ERROR - not enough text None
+2022-01-31 08:46:38,708 WARNING - We have no entries at this url: https://www.cdm.me/feed/
+2022-01-31 08:46:41,599 ERROR - not enough text None
+2022-01-31 08:46:52,698 WARNING - We have no entries at this url: feed://rtcg.me/rss.htmlhttps://www.cdm.me/rss/
+2022-01-31 08:46:52,727 WARNING - Local deduplication deleted 240 items.
+2022-01-31 08:46:52,728 WARNING - Found existing data, merging.
