@@ -1,195 +1,209 @@
-2022-01-31 08:30:02,973 WARNING - Starting crawl at 2022-01-31T08:30:02+0100.
-2022-01-31 08:30:03,146 WARNING - We have no entries at this url: https://www.index.hr/rss/info
-2022-01-31 08:30:18,078 WARNING - We have no entries at this url: https://www.24sata.hr/flatpages/rss
-2022-01-31 08:30:30,206 ERROR - not enough text None
-2022-01-31 08:30:36,661 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/lav/dnevni-horoskop-lav-31-01-2022-c4d6233e-8210-11ec-a57b-1671d7f67643
-2022-01-31 08:30:36,661 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:30:36,661 ERROR - empty HTML tree for URL None
-2022-01-31 08:30:37,186 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/strijelac/dnevni-horoskop-strijelac-31-01-2022-042db374-8213-11ec-acb7-1671d7f67643
-2022-01-31 08:30:37,187 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:30:37,187 ERROR - empty HTML tree for URL None
-2022-01-31 08:30:41,938 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/djevica/dnevni-horoskop-djevica-31-01-2022-fafcb162-8210-11ec-b74b-1671d7f67643
-2022-01-31 08:30:41,939 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:30:41,939 ERROR - empty HTML tree for URL None
-2022-01-31 08:30:43,056 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/jarac/dnevni-horoskop-jarac-31-01-2022-5009cd62-8215-11ec-a7e7-ae6c64849d17
-2022-01-31 08:30:43,056 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:30:43,057 ERROR - empty HTML tree for URL None
-2022-01-31 08:30:48,739 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/bik/dnevni-horoskop-bik-31-01-2022-2783430a-8210-11ec-aa76-ae6c64849d17
-2022-01-31 08:30:48,740 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:30:48,740 ERROR - empty HTML tree for URL None
-2022-01-31 08:30:52,334 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/blizanci/dnevni-horoskop-blizanci-31-01-2022-58ddb19c-8210-11ec-a7b9-ae6c64849d17
-2022-01-31 08:30:52,334 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:30:52,334 ERROR - empty HTML tree for URL None
-2022-01-31 08:30:53,231 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/skorpion/dnevni-horoskop-skorpion-31-01-2022-cb6648b2-8212-11ec-b748-4a92f9abb92d
-2022-01-31 08:30:53,231 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:30:53,231 ERROR - empty HTML tree for URL None
-2022-01-31 08:30:56,558 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/vodenjak/dnevni-horoskop-vodenjak-31-01-2022-7eaae4c6-8215-11ec-bea7-1671d7f67643
-2022-01-31 08:30:56,559 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:30:56,559 ERROR - empty HTML tree for URL None
-2022-01-31 08:30:56,737 ERROR - not enough text None
-2022-01-31 08:30:57,369 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/rak/dnevni-horoskop-rak-31-01-2022-8e3cd80e-8210-11ec-984d-ae6c64849d17
-2022-01-31 08:30:57,369 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:30:57,369 ERROR - empty HTML tree for URL None
-2022-01-31 08:30:58,236 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/vaga/dnevni-horoskop-vaga-31-01-2022-9f5f3e54-8212-11ec-b760-ae6c64849d17
-2022-01-31 08:30:58,236 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:30:58,237 ERROR - empty HTML tree for URL None
-2022-01-31 08:31:02,258 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/ovan/dnevni-horoskop-ovan-31-01-2022-ef0982d2-820f-11ec-890b-ae6c64849d17
-2022-01-31 08:31:02,259 ERROR - this type cannot be processed: <class 'NoneType'>
-2022-01-31 08:31:02,259 ERROR - empty HTML tree for URL None
-2022-01-31 08:32:10,073 WARNING - We have no entries at this url: http://www.100posto.hr/rss
-2022-01-31 08:32:12,644 WARNING - We have no entries at this url: https://o-nama.hrt.hr/rss-i-mobilne-aplikacije/rss-328191
-2022-01-31 08:32:12,785 WARNING - We have no entries at this url: https://express.24sata.hr/rss/
-2022-01-31 08:32:18,836 ERROR - not enough text None
-2022-01-31 08:32:20,003 ERROR - not enough text None
-2022-01-31 08:32:21,255 WARNING - We have no entries at this url: https://direktno.hr/rss/
-2022-01-31 08:32:56,047 ERROR - not enough text None
-2022-01-31 08:33:58,674 WARNING - unexpected in p: personname La Boétieju , čijim gubitkom su obilježeni slavni „Eseji“ (na čelu s onim o prijateljstvu) ili Ferrante piše o dvije talijanske prijateljice koje guši mafija u ciklusu „Genijalna prijateljica“ ili ja pišem o dvije hrvatske prijateljice od kojih se jedna bori s osjećajem ništavila koji je guta na svim razinama. Manifest ne mora imati deset točaka. Može imati jednu točku, u kojoj su bezbrojne čestice ljudske bliskosti.
-2022-01-31 08:34:09,028 WARNING - We have no entries at this url: https://www.nezavisne.com/rss
-2022-01-31 08:34:09,659 WARNING - We have no entries at this url: https://www.oslobodjenje.ba/rss
-2022-01-31 08:34:16,726 WARNING - We have no entries at this url: https://www.slobodna-bosna.ba/rss/
-2022-01-31 08:34:23,131 WARNING - We have no entries at this url: https://www.doznajemo.com?format=rss
-2022-01-31 08:34:53,730 ERROR - not enough text None
-2022-01-31 08:35:15,472 WARNING - We have no entries at this url: https://zurnal.info/rss
-2022-01-31 08:35:17,441 WARNING - We have no entries at this url: https://dnevni.ba/feed/
-2022-01-31 08:35:17,807 WARNING - We have no entries at this url: https://pogled.ba/rss/naslovna
-2022-01-31 08:37:53,832 ERROR - no encoding detected: None
-2022-01-31 08:37:53,833 ERROR - parsed tree length: 0, wrong data type or not valid HTML
-2022-01-31 08:37:53,833 ERROR - empty HTML tree for URL None
-2022-01-31 08:37:54,055 ERROR - no encoding detected: None
-2022-01-31 08:37:54,056 ERROR - parsed tree length: 0, wrong data type or not valid HTML
-2022-01-31 08:37:54,056 ERROR - empty HTML tree for URL None
-2022-01-31 08:37:54,293 ERROR - no encoding detected: None
-2022-01-31 08:37:54,294 ERROR - parsed tree length: 0, wrong data type or not valid HTML
-2022-01-31 08:37:54,294 ERROR - empty HTML tree for URL None
-2022-01-31 08:37:54,525 ERROR - no encoding detected: None
-2022-01-31 08:37:54,525 ERROR - parsed tree length: 1, wrong data type or not valid HTML
-2022-01-31 08:37:54,525 ERROR - empty HTML tree for URL None
-2022-01-31 08:38:12,436 WARNING - We have no entries at this url: https://www.blic.rs/rss
-2022-01-31 08:39:31,560 WARNING - We have no entries at this url: https://www.rts.rs/page/rss/ci.html
-2022-01-31 08:39:37,839 WARNING - unexpected in p: div 
+2022-02-01 08:30:02,343 WARNING - Starting crawl at 2022-02-01T08:30:02+0100.
+2022-02-01 08:30:02,524 WARNING - We have no entries at this url: https://www.index.hr/rss/info
+2022-02-01 08:30:15,030 WARNING - We have no entries at this url: https://www.24sata.hr/flatpages/rss
+2022-02-01 08:30:26,032 ERROR - not enough text None
+2022-02-01 08:30:30,592 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/bik/dnevni-horoskop-bik-01-02-2022-a2f9e23e-82c7-11ec-bd2f-ea668be63f28
+2022-02-01 08:30:30,593 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:30:30,593 ERROR - empty HTML tree for URL None
+2022-02-01 08:30:32,794 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/ribe/dnevni-horoskop-ribe-01-02-2022-bd886e20-82d3-11ec-aa6a-1671d7f67643
+2022-02-01 08:30:32,795 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:30:32,795 ERROR - empty HTML tree for URL None
+2022-02-01 08:30:33,800 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/ovan/dnevni-horoskop-ovan-01-02-2022-6d75117e-82c7-11ec-bc5a-ea668be63f28
+2022-02-01 08:30:33,801 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:30:33,801 ERROR - empty HTML tree for URL None
+2022-02-01 08:30:35,507 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/jarac/dnevni-horoskop-jarac-01-02-2022-7b0dc250-82cb-11ec-9e3c-1671d7f67643
+2022-02-01 08:30:35,508 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:30:35,508 ERROR - empty HTML tree for URL None
+2022-02-01 08:30:36,136 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/skorpion/dnevni-horoskop-skorpion-01-02-2022-e859a4d8-82ca-11ec-9746-4a92f9abb92d
+2022-02-01 08:30:36,137 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:30:36,137 ERROR - empty HTML tree for URL None
+2022-02-01 08:30:36,336 ERROR - not enough text None
+2022-02-01 08:30:37,544 ERROR - not a 200 response: 500 for URL https://net.hr/webcafe/dnevni-horoskop/vaga/dnevni-horoskop-vaga-01-02-2022-b541c31e-82ca-11ec-9ae7-1671d7f67643
+2022-02-01 08:30:37,545 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:30:37,545 ERROR - empty HTML tree for URL None
+2022-02-01 08:30:46,632 ERROR - not enough text None
+2022-02-01 08:30:47,240 ERROR - not enough text None
+2022-02-01 08:30:48,306 ERROR - not enough text None
+2022-02-01 08:31:27,993 WARNING - We have no entries at this url: http://www.100posto.hr/rss
+2022-02-01 08:31:30,763 WARNING - We have no entries at this url: https://o-nama.hrt.hr/rss-i-mobilne-aplikacije/rss-328191
+2022-02-01 08:31:30,885 WARNING - We have no entries at this url: https://express.24sata.hr/rss/
+2022-02-01 08:31:38,000 ERROR - not enough text None
+2022-02-01 08:31:39,909 WARNING - We have no entries at this url: https://direktno.hr/rss/
+2022-02-01 08:32:07,574 ERROR - not enough text None
+2022-02-01 08:33:16,099 WARNING - unexpected in p: personname La Boétieju , čijim gubitkom su obilježeni slavni „Eseji“ (na čelu s onim o prijateljstvu) ili Ferrante piše o dvije talijanske prijateljice koje guši mafija u ciklusu „Genijalna prijateljica“ ili ja pišem o dvije hrvatske prijateljice od kojih se jedna bori s osjećajem ništavila koji je guta na svim razinama. Manifest ne mora imati deset točaka. Može imati jednu točku, u kojoj su bezbrojne čestice ljudske bliskosti.
+2022-02-01 08:33:24,648 WARNING - We have no entries at this url: https://www.nezavisne.com/rss
+2022-02-01 08:33:25,243 WARNING - We have no entries at this url: https://www.oslobodjenje.ba/rss
+2022-02-01 08:33:32,013 WARNING - We have no entries at this url: https://www.slobodna-bosna.ba/rss/
+2022-02-01 08:33:39,222 WARNING - We have no entries at this url: https://www.doznajemo.com?format=rss
+2022-02-01 08:34:10,622 ERROR - not enough text None
+2022-02-01 08:34:32,084 WARNING - We have no entries at this url: https://zurnal.info/rss
+2022-02-01 08:34:33,644 WARNING - We have no entries at this url: https://dnevni.ba/feed/
+2022-02-01 08:34:34,041 WARNING - We have no entries at this url: https://pogled.ba/rss/naslovna
+2022-02-01 08:37:01,304 ERROR - no encoding detected: None
+2022-02-01 08:37:01,304 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-02-01 08:37:01,305 ERROR - empty HTML tree for URL None
+2022-02-01 08:37:01,528 ERROR - no encoding detected: None
+2022-02-01 08:37:01,529 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-02-01 08:37:01,529 ERROR - empty HTML tree for URL None
+2022-02-01 08:37:01,763 ERROR - no encoding detected: None
+2022-02-01 08:37:01,763 ERROR - parsed tree length: 0, wrong data type or not valid HTML
+2022-02-01 08:37:01,763 ERROR - empty HTML tree for URL None
+2022-02-01 08:37:02,004 ERROR - no encoding detected: None
+2022-02-01 08:37:02,004 ERROR - parsed tree length: 1, wrong data type or not valid HTML
+2022-02-01 08:37:02,004 ERROR - empty HTML tree for URL None
+2022-02-01 08:37:18,149 WARNING - We have no entries at this url: https://www.blic.rs/rss
+2022-02-01 08:38:25,595 WARNING - We have no entries at this url: https://www.rts.rs/page/rss/ci.html
+2022-02-01 08:38:32,015 WARNING - We have no entries at this url: https://www.novosti.rs/rss
+2022-02-01 08:38:32,389 WARNING - We have no entries at this url: https://informer.rs/rss
+2022-02-01 08:38:41,910 ERROR - not enough text None
+2022-02-01 08:38:42,826 ERROR - not enough text None
+2022-02-01 08:38:43,570 ERROR - not enough text None
+2022-02-01 08:38:44,309 ERROR - not enough text None
+2022-02-01 08:38:45,048 ERROR - not enough text None
+2022-02-01 08:42:21,079 WARNING - unexpected element seen: del None
+2022-02-01 08:42:21,862 WARNING - We have no entries at this url: https://pescanik.net/feed
+2022-02-01 08:42:50,113 WARNING - We have no entries at this url: https://time.rs/rss/rsspage
+2022-02-01 08:42:58,058 WARNING - We have no entries at this url: https://beta.rs/betarss
+2022-02-01 08:44:17,364 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:44:38,370 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:44:44,070 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:45:00,587 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:45:00,587 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:45:00,587 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:45:11,868 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:45:13,535 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-02-01 08:45:19,797 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-02-01 08:45:32,231 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:45:32,231 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:45:32,231 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:45:41,978 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-02-01 08:45:42,928 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-02-01 08:45:53,741 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:45:53,742 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                                            
+                                        
+                                        
+                                        
+                                        
+2022-02-01 08:46:04,151 WARNING - unexpected in p: section 
+                                                
+                    
+                                                                 
+                                        
+2022-02-01 08:46:20,846 ERROR - not enough text None
+2022-02-01 08:46:22,613 ERROR - not a 200 response: 403 for URL https://www.cdm.me/hronika/moguce-izvodenje-jos-cetiri-busotine-u-cg-podmorju/
+2022-02-01 08:46:22,614 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:46:22,614 ERROR - empty HTML tree for URL None
+2022-02-01 08:46:22,666 ERROR - not a 200 response: 403 for URL https://www.cdm.me/drustvo/zbog-odrona-zatvoren-put-mojkovac-durdevica-tara/
+2022-02-01 08:46:22,668 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:46:22,668 ERROR - empty HTML tree for URL None
+2022-02-01 08:46:22,730 ERROR - not a 200 response: 403 for URL https://www.cdm.me/hronika/za-tri-dana-poginulo-sest-osoba/
+2022-02-01 08:46:22,731 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:46:22,731 ERROR - empty HTML tree for URL None
+2022-02-01 08:46:22,790 ERROR - not a 200 response: 403 for URL https://www.cdm.me/sport/kosarka/plavi-na-terenu-favorita-ali-sa-nadom-u-novi-podvig/
+2022-02-01 08:46:22,791 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:46:22,791 ERROR - empty HTML tree for URL None
+2022-02-01 08:46:22,840 ERROR - not a 200 response: 403 for URL https://www.cdm.me/drustvo/tim-klinickog-bogatiji-za-11-ljekara/
+2022-02-01 08:46:22,841 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:46:22,841 ERROR - empty HTML tree for URL None
+2022-02-01 08:46:22,893 ERROR - not a 200 response: 403 for URL https://www.cdm.me/drustvo/nova-skola-vladimir-nazor-u-martu-2023/
+2022-02-01 08:46:22,894 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:46:22,894 ERROR - empty HTML tree for URL None
+2022-02-01 08:46:22,943 ERROR - not a 200 response: 403 for URL https://www.cdm.me/sport/kosarka/pavicevic-optimista-na-dobrom-smo-putu/
+2022-02-01 08:46:22,945 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:46:22,945 ERROR - empty HTML tree for URL None
+2022-02-01 08:46:22,993 ERROR - not a 200 response: 403 for URL https://www.cdm.me/kolumne/najgore-od-svega-je-sto-gradanin-zbunjuje/
+2022-02-01 08:46:22,995 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:46:22,995 ERROR - empty HTML tree for URL None
+2022-02-01 08:46:23,049 ERROR - not a 200 response: 403 for URL https://www.cdm.me/hronika/vozilo-sletjelo-u-kanjon-morace-poginula-jedna-osoba/
+2022-02-01 08:46:23,050 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:46:23,050 ERROR - empty HTML tree for URL None
+2022-02-01 08:46:23,099 ERROR - not a 200 response: 403 for URL https://www.cdm.me/tehno-nauka/medicina/razbijamo-predrasude-sta-je-tacno-a-sta-netacno-o-nikotinu/
+2022-02-01 08:46:23,100 ERROR - this type cannot be processed: <class 'NoneType'>
+2022-02-01 08:46:23,100 ERROR - empty HTML tree for URL None
+2022-02-01 08:46:31,331 WARNING - We have no entries at this url: feed://rtcg.me/rss.htmlhttps://www.cdm.me/rss/
+2022-02-01 08:46:31,364 WARNING - Local deduplication deleted 228 items.
+2022-02-01 08:46:31,364 WARNING - Found existing data, merging.
+2022-02-01 08:46:32,991 WARNING - Second deduplication deleted 1774 instances.
+2022-02-01 08:46:32,991 WARNING - Finished crawl at 2022-02-01T08:46:32+0100. 
 
- 
 
-2022-01-31 08:39:38,872 WARNING - We have no entries at this url: https://www.novosti.rs/rss
-2022-01-31 08:39:39,335 WARNING - We have no entries at this url: https://informer.rs/rss
-2022-01-31 08:39:50,103 ERROR - not enough text None
-2022-01-31 08:39:50,841 ERROR - not enough text None
-2022-01-31 08:39:51,551 ERROR - not enough text None
-2022-01-31 08:39:52,381 ERROR - not enough text None
-2022-01-31 08:42:36,868 WARNING - unexpected element seen: del None
-2022-01-31 08:42:38,458 WARNING - We have no entries at this url: https://pescanik.net/feed
-2022-01-31 08:43:08,061 WARNING - We have no entries at this url: https://time.rs/rss/rsspage
-2022-01-31 08:43:16,048 WARNING - We have no entries at this url: https://beta.rs/betarss
-2022-01-31 08:44:41,272 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-31 08:44:47,684 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        Bogdana, Nataša i Željko su u igraonici ostali više od tri sata, nakon čega su otišli na večeru, pa u svoj dom u Ljutice Bogdana, gde ih je čekao tata Veljko.
-2022-01-31 08:44:47,684 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                                            
-                                        
-                                        
-                                        
-                                        
-2022-01-31 08:44:54,907 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-31 08:44:54,907 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                                            
-                                        
-                                        
-                                        
-                                        
-2022-01-31 08:45:22,352 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-31 08:45:24,183 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-31 08:45:30,141 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-31 08:45:33,440 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-31 08:45:50,597 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-31 08:45:50,598 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                                            
-                                        
-                                        
-                                        
-                                        
-2022-01-31 08:46:05,461 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-31 08:46:06,074 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-31 08:46:09,592 WARNING - unexpected in p: section 
-                                                
-                    
-                                                                 
-                                        
-2022-01-31 08:46:19,903 WARNING - unexpected in p: div 
-                                                        
-                
-                    
-                        OTKRIVAMO! ŠOKANTNI DETALJI IZ ISTRAGE EVROPOLA! Zvicer: Imamo 100.000.000 dolara za ubistvo Vučića!
-                    
-                    
-                
-            
-                
-                    
-                        SAZNAJEMO! ZAKAZAN SASTANAK SNS I SPS! Delegacije predvode Vučić i Dačić!
-                    
-                    
-                
-            
-                 
-                                                
-2022-01-31 08:46:19,904 WARNING - unexpected in p: article 
-                    
-                    
-                        
-                    
-                     
-                                                                
-2022-01-31 08:46:37,962 ERROR - not enough text None
-2022-01-31 08:46:38,708 WARNING - We have no entries at this url: https://www.cdm.me/feed/
-2022-01-31 08:46:41,599 ERROR - not enough text None
-2022-01-31 08:46:52,698 WARNING - We have no entries at this url: feed://rtcg.me/rss.htmlhttps://www.cdm.me/rss/
-2022-01-31 08:46:52,727 WARNING - Local deduplication deleted 240 items.
-2022-01-31 08:46:52,728 WARNING - Found existing data, merging.
